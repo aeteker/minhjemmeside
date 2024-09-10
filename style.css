@@ -1,3 +1,4 @@
+/* Generelle styling */
 * {
     margin: 0;
     padding: 0;
@@ -25,13 +26,15 @@ header {
     background: #fff; /* Sørg for at baggrunden er hvid så den ikke ser transparent ud */
 }
 
-
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%; /* Stræk nav-container til hele viewport-bredden */
+    max-width: 1200px; /* Maksimal bredde */
+    margin: 0 auto; /* Centerer containeren */
+    padding: 0 1rem; /* Tilføj padding for at sikre lidt afstand til kanten */
+    box-sizing: border-box; /* Inkluderer padding og border i elementets samlede bredde og højde */
 }
 
 .logo a {
@@ -81,8 +84,8 @@ nav ul li a:hover::after {
 
 /* Hero section styling */
 #hero {
-    background: url('vvsventilation.jpg') no-repeat center center; /* Fjern contain */
-    height: 75vh; /* Justér højden */
+    background: url('vvsventilation.jpg') no-repeat center center;
+    height: 75vh;
     position: relative;
     color: #fff;
     display: flex;
@@ -90,18 +93,17 @@ nav ul li a:hover::after {
     justify-content: center;
     text-align: center;
     margin-top: 2rem; /* Tilføjer margin mellem header og hero */
-    background-size: 90%; /* Stræk billedet til at fylde både bredde og højde */
-    background-position: center center; /* Centrer billedet */
+    background-size: 90%;
+    background-position: center center;
     filter: grayscale(50%);
-
 }
 
 .hero-content {
     background: rgba(251, 249, 249, 0);
-    padding: 0rem; /* Reduceret padding for at flytte teksten højere op */
+    padding: 0rem;
     border-radius: 10px;
-    position: absolute; /* Placerer indholdet i forhold til hero-sektionen */
-    top: 1.0%; /* Juster denne værdi for at flytte teksten højere op */
+    position: absolute;
+    top: 1.0%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -109,40 +111,40 @@ nav ul li a:hover::after {
 
 /* Hero section h1 styling */
 #hero h1 {
-    font-family: 'Roboto Slab'; /* Ændret til Roboto Slab */
-    font-size: 1.5rem; /* Mindre skriftstørrelse end h2 */
-    font-weight: lighter; /* Tynd skrift */
+    font-family: 'Roboto Slab';
+    font-size: 1.5rem;
+    font-weight: lighter;
     margin-top: 20%;
-    margin-bottom: 1rem; /* Fjern margin */
-    color: #000000; /* Sort farve */
+    margin-bottom: 1rem;
+    color: #000000;
     letter-spacing: 10px;
 }
 
 /* Hero section h2 styling */
 #hero h2 {
-    font-family: 'Roboto slab'; /* Ændret til Roboto slab*/
-    font-size: 3rem; /* Stor skriftstørrelse */
-    font-weight: lighter; /* let vægt */
-    color: #000; /* Sort farve */
-    margin: 0; /* Fjern margin */
+    font-family: 'Roboto slab';
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #000;
+    margin: 0;
     letter-spacing: 5px;
 }
 
 .hero-content h1 {
-    font-size: 3rem; /* Juster størrelse efter behov */
-    letter-spacing: 1px; /* Linjeafstand mellem bogstaverne */
+    font-size: 3rem;
+    letter-spacing: 1px;
 }
 
 .hero-content h2 {
-    font-size: 1.5rem; /* Juster størrelse efter behov */
-    letter-spacing: 0.5px; /* Linjeafstand mellem bogstaverne */
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
 }
 
 /* Sektion styling */
 section {
-    padding: 1rem 0; /* Reduceret padding for at gøre sektionen mindre */
+    padding: 1rem 0;
     text-align: center;
-    border-bottom: none; /* Fjernet linjen mellem sektioner */
+    border-bottom: none;
 }
 
 section#forside {
@@ -171,7 +173,7 @@ section#ydelser {
 
 /* Specifik styling for fremhævet tekst i velkommen-containeren */
 #velkommen p strong {
-    color: #000; /* Sort farve */
+    color: #000;
 }
 
 #velkommen .columns {
@@ -203,19 +205,19 @@ h1 {
 }
 
 #parallax-window {
+    width: 100%; /* Sørger for, at parallax-vinduet strækker sig til begge sider */
     height: 50vh;
-    background-image: url('kontaktwb.jpg'); /* Sørg for at dette billede er højopløseligt */
+    background-image: url('kontaktwb.jpg');
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover; /* Brug cover for at fylde containeren uden at forvrænge */
+    background-size: cover;
     position: relative;
     z-index: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-   /* filter: sepia(80%) brightness(80%) contrast(85%) hue-rotate(-10deg);*/
-   filter:grayscale(80%);
+    filter: grayscale(80%);
 }
 
 /* Kontakt-container styling */
@@ -225,58 +227,57 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background: none; /* Ingen baggrund */
-    padding: 3rem; /* Øget padding for at give mere plads indeni boksen */
-    border-radius: 0; /* Kantede hjørner */
-    box-shadow: none; /* Ingen skygge */
-    width: 80%; /* Øget bredde til 80% af viewport-bredden */
-    max-width: 1000px; /* Maksimal bredde på 1000px */
-    box-sizing: border-box; /* Inkluderer padding og border i elementets samlede bredde og højde */
+    background: none;
+    padding: 3rem;
+    border-radius: 0;
+    box-shadow: none;
+    width: 80%;
+    max-width: 1000px;
+    box-sizing: border-box;
 }
 
 /* Tekst i kontakt-container */
 .kontakt-container h2 {
-    color: #fff; /* Hvid farve for overskriften */
-    margin-bottom: 0.5rem; /* Reduceret afstand mellem overskrift og tekst */
-    font-size: 2.5rem; /* Større skriftstørrelse for overskriften */
-    font-family: 'Roboto Slab', serif; /* Ændret til Roboto Slab */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Tilføjer en skygge til teksten for bedre læsbarhed */
-    letter-spacing: 0.10rem; /* Justeret linjeafstand mellem bogstaverne */
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.10rem;
 }
 
 /* Kontakt-container paragraf */
 .kontakt-container p {
-    color: #fff; /* Hvid farve for teksten */
-    font-size: 1.2rem; /* Mindre skriftstørrelse end overskriften */
-    margin-top: 0.25rem; /* Reduceret afstand mellem tekst og knap */
-    margin-bottom: 1rem; /* Afstand mellem tekst og knap */
-    font-family: 'Roboto Slab', serif; /* Ændret til Roboto Slab */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Tilføjer en skygge til teksten for bedre læsbarhed */
-    letter-spacing: 0.1rem; /* Justeret linjeafstand mellem bogstaverne */
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1rem;
 }
-
 
 /* Knap i kontakt-container */
 .kontakt-container .kontakt-button {
-    display: inline-block; /* Gør knappen til inline-block for at kunne anvende padding */
-    font-weight: lighter; /* Gør knap-teksten tyk */
-    color: #fff; /* Hvid tekstfarve */
-    background-color: transparent; /* Gør knappen gennemsigtig */
-    border: 2px solid #fff; /* Tyk, hvid kant */
-    padding: 0.75rem 1.5rem; /* Komfortabel padding */
-    border-radius: 0; /* Kantede hjørner på knappen */
-    cursor: pointer; /* Ændrer cursoren til pointer ved hover */
-    text-decoration: none; /* Fjerner understregning fra linket */
-    font-family: 'Roboto Slab', serif; /* Ændret til Roboto Slab */
-    letter-spacing: 0.05rem; /* Justeret linjeafstand mellem bogstaverne */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smidige overgangseffekter */
+    display: inline-block;
+    font-weight: lighter;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.05rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover-effekt på knappen */
 .kontakt-container .kontakt-button:hover {
-    color: #ffffff; /* Ændrer tekstfarven til hvid ved hover */
-    border-color: #ffffff; /* Ændrer kantfarven til hvid ved hover */
-    background-color: rgba(255, 255, 255, 0.1); /* Tilføjer en let, gennemsigtig baggrund ved hover */
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* OM MIG sektion */
@@ -311,262 +312,90 @@ h1 {
 .om-text {
     flex: 1;
     text-align: left;
-    margin-top: 0; /* Fjern margin-top */
+    margin-top: 0;
 }
 
 /* Specifik font til overskriften */
 .om-text .om-title {
-    font-family: 'Roboto Slab', serif; /* Juster fontfamilie */
-    font-size: 1.2rem; /* Juster skriftstørrelse */
-    font-weight: 50; /* Juster skriftvægt */
-    color: #959191; /* Farve til overskriften */
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    font-weight: 50;
+    color: #959191;
 }
 
 /* Specifik font til navnet */
 .om-text .om-name {
-    text-decoration: none;
-    font-size: 36px;
     font-family: 'Roboto Slab', serif;
-    font-weight: normal;
-    letter-spacing: 2px;
-    color: #333; /* Farve til navnet */
-    margin: 0; /* Fjern margin */
-    padding: 0; /* Fjern padding */
-    line-height: 1; /* Juster linjehøjde */
-}
-
-/* Specifik font til underteksten */
-.om-text .undertekst {
-    font-family: 'Roboto Slab', serif; /* Juster fontfamilie */
-    font-size: 1.1rem; /* Juster skriftstørrelse */
-    line-height: 1.4; /* Justér linjehøjden for læsbarhed */
-    color: #959191; /* Lys grå farve */
-    margin-top: 2rem; /* Juster margin-top for at øge afstanden */
-}
-
-/* LinkedIn ikon styling */
-.linkedin-container {
-    display: flex;
-    align-items: center; /* Centerer teksten og ikonet vertikalt */
-    margin-top: 2rem; /* Tilføj margin-top for afstand fra underteksten */
-}
-
-/* CSS for linket, der omfatter både tekst og ikon */
-.linkedin-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none; /* Fjern standard understregning */
-}
-
-/* Styling for LinkedIn-tekst */
-.linkedin-text {
-    font-family: 'Roboto Slab', serif; /* Juster fontfamilie */
-    font-size: 1.1rem; /* Juster skriftstørrelse */
-    color: #959191; /* Farve til teksten, samme som "Mit CV" */
-    margin-right: 1rem; /* Tilføj margin til højre for afstand til ikonet */
-}
-
-/* Hover styling */
-.linkedin-link:hover .linkedin-text {
-    text-decoration: underline; /* Tilføj understregning ved hover */
-}
-
-/* Styling for LinkedIn ikon */
-.linkedin-link i {
-    font-size: 4rem; /* Størrelsen på LinkedIn-ikonet */
-    color: #0077b5; /* LinkedIn's blå farve */
-    text-decoration: none; /* Fjern understregning */
-    margin-left: 2rem; /* Tilføj samme margin som ved CV-linket */
-}
-
-.linkedin-link:hover i {
-    color: #005582; /* Mørkere blå ved hover */
-}
-
-/* Styling for CV-linket */
-.cv-container {
-    margin-top: 2rem; /* Tilføj margin-top for afstand fra LinkedIn-ikonet */
-}
-
-.cv-link {
-    display: flex;
-    align-items: center;
-    font-family: 'Roboto Slab', serif; /* Juster fontfamilie */
-    font-size: 1.1rem; /* Juster skriftstørrelse */
-    color: #959191; /* Farve til teksten */
-    text-decoration: none; /* Fjern understregning */
-}
-
-.cv-link i {
-    font-size: 4rem; /* Størrelsen på PDF-ikonet */
-    color: #e44c59; /* Farve til PDF-ikonet (rød) */
-    margin-left: 9rem; /* Margin til højre for afstand fra teksten */
-}
-
-.cv-link:hover {
-    text-decoration: underline; /* Tilføj understregning ved hover */
-}
-
-.cv-link:hover i {
-    color: #db0000;
-}
-
-/* Ydelser sektion styling */
-#ydelser {
-    background: #f9f9f9;
-    padding: 0.5rem 1rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-#ydelser h2 {
     font-size: 2rem;
-    font-family: 'Roboto Slab', serif;
-    margin-bottom: 2rem;
+    font-weight: lighter;
+    color: #000;
 }
 
-.ydelser-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.ydelse {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    width: 300px;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.ydelse i {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.ydelse h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.ydelse p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Hover-effekt på ydelser */
-.ydelse:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Ydelser sektion - Farveændringer for ikoner */
-.fas.fa-gavel {
-    color: #4682B4; /* Tomatfarve for syn- og skønsmandsopgaver */
-}
-
-.fas.fa-tools {
-    color: #4682B4; /* Stålblå farve for VVS tjek */
-}
-
-.fas.fa-fire {
-    color: #4682B4; /* Orange farve for Indregulering af Gaskomfurer */
-}
-
-.fas.fa-hammer {
-    color: #4682B4; /* Blåviolet farve for mindre VVS arbejder */
-}
-
-.fas.fa-cogs {
-    color: #4682B4; /* MediumSeaGreen for Projektering af Ventilationsentrepriser */
-}
-
-.fas.fa-calculator {
-    color: #4682B4; /* Guld farve for Tilbudsberegning */
-}
-
-.fas.fa-check-circle {
-    color: #4682B4; /* LimeGreen farve for Kvalitetssikring */
-}
-
-.fas.fa-bolt {
-    color: #4682B4; /* OrangeRed for Energioptimering */
-}
-
-
-/* Footer styling */
+/* Footer */
 footer {
-    background: #ffffff;
-    color: #000000;
-    padding: 0.5rem 0;
+    background: #222;
+    color: #fff;
     text-align: center;
-    margin-top: auto; /* Placerer footeren nederst */
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
 }
 
-footer p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-content {
+        padding: 1rem;
+        width: 100%;
+        top: 50%;
+        transform: translateX(0);
+    }
+
+    #hero h1 {
+        font-size: 1.2rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    .kontakt-container {
+        width: 90%;
+    }
+
+    .om-container {
+        flex-direction: column;
+    }
+
+    .om-image {
+        max-width: 100%;
+    }
+
+    .om-text {
+        margin-top: 2rem;
     }
 }
 
-.fade-in {
-    opacity: 0; /* Initial skjult */
-    transform: translateY(20px); /* Starter lidt nede */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1; /* Gør elementet synligt */
-    transform: translateY(0); /* Flytter elementet på plads */
-}
-
-
-/* Din eksisterende CSS-kode */
-
-/* Eksempel på eksisterende kode */
-/* ... */
-
-/* Responsive design tilføjet nedenfor */
-
-/* Styles for desktop devices */
-@media only screen and (min-width: 992px) {
-  body {
-    font-size: 16px;
-    width: 80%;
-    margin: auto;
-  }
-}
-
-/* Styles for tablet devices */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 14px;
-    width: 90%;
-    margin: auto;
-  }
-}
-
-/* Styles for mobile devices */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 12px;
-    width: 100%;
-    margin: 0;
-  }
+/* Større skærme */
+@media (min-width: 1200px) {
+    .nav-container {
+        max-width: 1200px;
+    }
+    
+    #hero {
+        background-size: cover;
+    }
+    
+    .kontakt-container {
+        width: 60%;
+    }
 }
