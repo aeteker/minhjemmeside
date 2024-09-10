@@ -569,10 +569,16 @@ footer p {
         padding: 1rem;
     }
 
-    /* Velkommen-sektion */
+   /* Velkommen-sektion */
     #velkommen .columns {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row; /* Skift til rækkevis layout */
+        gap: 0.5rem; /* Reducer mellemrum */
+    }
+
+    #velkommen .column {
+        flex: 1; /* Lader begge kolonner tage lige meget plads */
+        max-width: 48%; /* Giver en bredde på 48% for at sikre, at de står ved siden af hinanden */
+        box-sizing: border-box; /* Sikrer, at padding ikke påvirker bredden */
     }
 
     /* Kontakt container */
