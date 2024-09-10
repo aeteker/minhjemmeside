@@ -577,7 +577,7 @@ footer p {
 
     #velkommen .column {
         flex: 1; /* Lader begge kolonner tage lige meget plads */
-        max-width: 48%; /* Giver en bredde på 48% for at sikre, at de står ved siden af hinanden */
+        max-width: 20%; /* Giver en bredde på 48% for at sikre, at de står ved siden af hinanden */
         box-sizing: border-box; /* Sikrer, at padding ikke påvirker bredden */
     }
 
