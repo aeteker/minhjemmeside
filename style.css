@@ -32,6 +32,36 @@ header {
     align-items: center;
     width: 90%;
     margin: 0 auto;
+    
+    /* Mobile enheder (op til 599px) */
+@media (max-width: 599px) {
+  .velkommen,
+  .om-mig,
+  .ydelser {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+}
+
+/* Tablets (600px til 991px) */
+@media (min-width: 600px) and (max-width: 991px) {
+  .velkommen,
+  .om-mig,
+  .ydelser {
+    padding: 1rem;
+    font-size: 16px;
+  }
+}
+
+/* Desktop (992px og op) */
+@media (min-width: 992px) {
+  .velkommen,
+  .om-mig,
+  .ydelser {
+    padding: 2rem;
+    font-size: 18px;
+  }
+}
 }
 
 .logo a {
