@@ -538,17 +538,46 @@ footer p {
 
 /* Mobilvenlig design (maks bredde: 767px) */
 @media (max-width: 767px) {
-    /* Juster navigation */
     .nav-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        padding: 0 1rem;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
+    .hamburger {
+        display: block; /* Viser hamburger-knappen på mobil */
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
     }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: #000; /* Farve til linjerne */
+        transition: all 0.3s;
+    }
+
+    .nav-links {
+        display: none; /* Skjuler navigationselementerne som standard */
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background: #fff; /* Baggrundsfarve til dropdown menuen */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Viser navigationen når menuen er aktiv */
+    .nav-links.active {
+        display: flex;
+    }
+}
 
     /* Hero sektion */
     #hero {
