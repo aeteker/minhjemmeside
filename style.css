@@ -537,126 +537,36 @@ footer p {
 }
 
 
-/* For små skærme (telefoner i portræt-tilstand) */
-@media (max-width: 576px) {
-    /* Sticky navigation styling */
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .nav-container ul {
-        flex-direction: column;
-        gap: 0;
-    }
+/* Din eksisterende CSS-kode */
 
-    .nav-container ul li a {
-        padding: 1rem;
-    }
-    
-    #hero {
-        height: 50vh;
-        background-size: cover;
-    }
-    
-    #hero h1 {
-        font-size: 1.2rem;
-        letter-spacing: 5px;
-    }
-    
-    #hero h2 {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-    }
-    
-    #velkommen .columns {
-        flex-direction: column;
-    }
-    
-    .om-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .om-image {
-        max-width: 100%;
-    }
-    
-    .om-text {
-        text-align: center;
-    }
-    
-    .ydelser-container {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Eksempel på eksisterende kode */
+/* ... */
 
-    .ydelse {
-        width: 90%;
-        margin: 1rem 0;
-    }
+/* Responsive design tilføjet nedenfor */
+
+/* Styles for desktop devices */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+  }
 }
 
-/* For mellemstore skærme (tablets) */
-@media (min-width: 577px) and (max-width: 768px) {
-    #hero {
-        height: 60vh;
-        background-size: cover;
-    }
-    
-    #hero h1 {
-        font-size: 1.5rem;
-    }
-    
-    #hero h2 {
-        font-size: 2.8rem;
-    }
-    
-    .om-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .om-image {
-        max-width: 100%;
-    }
-    
-    .om-text {
-        text-align: center;
-    }
-    
-    .ydelser-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .ydelse {
-        width: 90%;
-        margin: 1rem 0;
-    }
+/* Styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+  }
 }
 
-/* For store skærme (borde og store tablets) */
-@media (min-width: 769px) {
-    #hero {
-        height: 75vh;
-        background-size: cover;
-    }
-    
-    #hero h1 {
-        font-size: 1.8rem;
-    }
-    
-    #hero h2 {
-        font-size: 3rem;
-    }
-    
-    .ydelser-container {
-        flex-wrap: wrap;
-    }
-
-    .ydelse {
-        width: 300px;
-    }
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+  }
 }
-
