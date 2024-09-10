@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <!-- Tilføj link til Font Awesome for ikoner -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="sticky">
+        <div class="logo">
+            <a href="index.html">GROENNEGARD.DK</a> <!-- Tilføjer logoet/linket -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">FORSIDE</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Kontaktoplysninger Sektion -->
+    <section id="kontakt-oplysninger">
+        <img src="kontakt.jpg" alt="Kontor med laptops">
+        <h2 class="kontaktoverskrift">KONTAKTOPLYSNINGER</h2>
+        <div class="oplysninger">
+            <div class="kontakt-info">
+                <a href="mailto:your-email@example.com">
+                    <i class="fas fa-envelope"></i> arif.e.teker@gmail.com
+                </a>
+            </div>
+            <div class="kontakt-info">
+                <a href="tel:+4512345678">
+                    <i class="fas fa-phone"></i> +45 53 86 18 01
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Kontakt Sektion -->
+    <section id="kontakt-formular">
+        <h1>KONTAKT OS</h1>
+        <form action="kontakt.php" method="post">
+            <div class="input-container">
+                <input type="text" id="navn" name="navn" placeholder="NAVN *" required>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="E-MAIL *" required>
+            </div>
+            <div class="input-container">
+                <input type="tel" id="telefon" name="telefon" placeholder="TELEFONNUMMER *" required>
+            </div>
+            <div class="input-container">
+                <textarea id="besked" name="besked" rows="5" placeholder="BESKED *" required></textarea>
+            </div>
+            <button type="submit">SEND</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 groennegaard.dk</p>
+    </footer>
+
+</body>
+</html>
