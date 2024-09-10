@@ -119,18 +119,18 @@ nav ul li a:hover::after {
 }
 
 .om-image {
-    max-width: 45%; /* Kontrolleret størrelse for store skærme */
+    max-width: 45%;
     flex: 1;
-    filter: grayscale(50%); /* Sørg for at grayscale anvendes korrekt */
+    filter: grayscale(50%);
     margin: 0 auto;
-    max-height: 400px; /* Begræns billedhøjde */
-    object-fit: cover; /* Sørger for, at billedet bevarer sine proportioner */
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .om-text {
     flex: 1;
     padding: 0 1rem;
-    text-align: center; /* Centreret tekst for bedre balance */
+    text-align: center;
 }
 
 /* Sektion styling */
