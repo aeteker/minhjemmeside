@@ -535,3 +535,82 @@ footer p {
     opacity: 1; /* Gør elementet synligt */
     transform: translateY(0); /* Flytter elementet på plads */
 }
+
+/* Mobilvenlig design (maks bredde: 767px) */
+@media (max-width: 767px) {
+    /* Juster navigation */
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Hero sektion */
+    #hero {
+        height: 60vh;
+        background-size: cover; /* Sørger for at billedet dækker hele området */
+    }
+
+    #hero h1, #hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    /* Sektioner */
+    section {
+        padding: 1rem;
+    }
+
+    /* Velkommen-sektion */
+    #velkommen .columns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Kontakt container */
+    .kontakt-container {
+        padding: 2rem 1rem;
+        width: 90%;
+    }
+
+    .kontakt-container h2 {
+        font-size: 2rem;
+    }
+
+    .kontakt-container p {
+        font-size: 1rem;
+    }
+
+    .kontakt-container .kontakt-button {
+        padding: 0.5rem 1rem;
+    }
+
+    /* OM MIG sektion */
+    .om-container {
+        flex-direction: column;
+    }
+
+    .om-image {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    /* Ydelser sektion */
+    .ydelser-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .ydelse {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
