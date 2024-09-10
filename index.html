@@ -16,8 +16,13 @@
             <div class="logo">
                 <a>GROENNEGAARD.DK</a>
             </div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#hero">FORSIDE</a></li>
                     <li><a href="#parallax-window">KONTAKT</a></li>
                 </ul>
@@ -135,6 +140,13 @@
     <footer>
         <p>&copy; 2024 groennegaard.dk</p>
     </footer>
+
+    <!-- JavaScript til hamburger-menuen -->
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
