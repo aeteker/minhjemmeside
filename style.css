@@ -538,16 +538,24 @@ footer p {
 
 @media screen and (max-width: 768px) {
     /* Navigation */
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
+    @media (max-width: 768px) {
+        .nav-container {
+            width: 100%; /* Sørger for, at navigationen strækker sig over hele skærmen */
+        }
+    
+        .logo a {
+            font-size: 1.2rem; /* Mindre skriftstørrelse til logoet */
+        }
+    
+        nav ul {
+            gap: 0.5rem; /* Mindre afstand mellem navigationslinks */
+        }
+    
+        nav ul li a {
+            font-size: 0.9rem; /* Mindre skriftstørrelse til links */
+        }
     }
-
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+    
 
     /* Hero section */
     #hero {
