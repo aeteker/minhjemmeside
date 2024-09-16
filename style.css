@@ -575,16 +575,15 @@ footer p {
         text-align: center;
         /*height: 100vh;  Sørger for at hero sektionen fylder hele viewporten */
         background-size: cover;
-        background-position: center;
       }
     
       .hero h1 {
-        font-size: 1.5rem; /* Meget lille skriftstørrelse til h1 */
+        font-size: 0.5rem; /* Meget lille skriftstørrelse til h1 */
         margin: 0;
       }
     
       .hero h2 {
-        font-size: 1rem; /* Meget lille skriftstørrelse til h2 */
+        font-size: 0.3rem; /* Meget lille skriftstørrelse til h2 */
         margin: 0;
       }
     }
