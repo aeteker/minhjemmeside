@@ -568,12 +568,12 @@ footer p {
     }
 
     /* Hero sektion */
-    .hero h1 {
+    #hero h1 {
         font-size: 1rem; /* Juster font-størrelsen som ønsket */
         margin-bottom: 4rem; /* Juster padding-top for at flytte h1 lavere */
     }
 
-    .hero h2 {
+    #hero h2 {
         font-size: 0.5rem; /* Juster font-størrelsen som ønsket */
         margin-bottom: 2rem; /* Juster padding-top for at flytte h2 lavere */
     }
