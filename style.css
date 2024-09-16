@@ -536,116 +536,53 @@ footer p {
     transform: translateY(0); /* Flytter elementet på plads */
 }
 
-/* Mobilvenlig design (maks bredde: 767px) */
-@media (max-width: 767px) {
+/* For mindre skærme */
+@media (max-width: 768px) {
     .nav-container {
-        padding: 0 1rem;
-    }
-
-    .hamburger {
-        display: block; /* Viser hamburger-knappen på mobil */
-        cursor: pointer;
-        background: none;
-        border: none;
-        padding: 0;
-    }
-
-    .hamburger span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px;
-        background-color: #000; /* Farve til linjerne */
-        transition: all 0.3s;
-    }
-
-    .nav-links {
-        display: none; /* Skjuler navigationselementerne som standard */
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        background: #fff; /* Baggrundsfarve til dropdown menuen */
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100%;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        align-items: flex-start;
     }
-
-    /* Viser navigationen når menuen er aktiv */
-    .nav-links.active {
-        display: flex;
+    
+    .nav-container nav ul {
+        flex-direction: column;
     }
-}
-
-    /* Hero sektion */
-    #hero {
-        height: 60vh;
-        background-size: cover; /* Sørger for at billedet dækker hele området */
+    
+    .nav-container nav ul li {
+        margin-bottom: 1rem;
     }
-
-    #hero h1, #hero h2 {
+    
+    #hero h1 {
         font-size: 1.2rem;
     }
-
-    .hero-content {
-        padding: 1rem;
-    }
-
-    /* Sektioner */
-    section {
-        padding: 1rem;
-    }
-
-   /* Velkommen-sektion */
-    #velkommen .columns {
-        flex-direction: row; /* Skift til rækkevis layout */
-        gap: 0.5rem; /* Reducer mellemrum */
-    }
-
-    #velkommen .column {
-        flex: 1; /* Lader begge kolonner tage lige meget plads */
-        max-width: 20%; /* Giver en bredde på 48% for at sikre, at de står ved siden af hinanden */
-        box-sizing: border-box; /* Sikrer, at padding ikke påvirker bredden */
-    }
-
-    /* Kontakt container */
-    .kontakt-container {
-        padding: 2rem 1rem;
-        width: 90%;
-    }
-
-    .kontakt-container h2 {
+    
+    #hero h2 {
         font-size: 2rem;
     }
-
-    .kontakt-container p {
-        font-size: 1rem;
+    
+    .columns {
+        flex-direction: column;
+        gap: 1rem;
     }
-
-    .kontakt-container .kontakt-button {
-        padding: 0.5rem 1rem;
-    }
-
-    /* OM MIG sektion */
+    
     .om-container {
         flex-direction: column;
+        text-align: center;
     }
-
-    .om-image {
+    
+    .om-image, .om-text {
         max-width: 100%;
         margin-bottom: 1rem;
     }
-
-    /* Ydelser sektion */
+    
     .ydelser-container {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1rem;
     }
-
-    .ydelse {
+    
+    .kontakt-container {
         width: 90%;
-        margin: 0 auto;
+        padding: 2rem;
     }
 }
+
