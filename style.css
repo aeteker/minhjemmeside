@@ -585,7 +585,7 @@ footer p {
 }
 
 .hero-container p {
-    font-size: 10px; /* Juster skriftstørrelse for tekst */
+    font-size: 1rem; /* Juster skriftstørrelse for tekst */
 }
 }
 
