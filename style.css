@@ -568,71 +568,98 @@ footer p {
     }
 
 
-    /* Hero section */
-    #hero {
-        height: 50vh; /* Juster hero-højden for mindre skærme */
-        background-size: cover; /* Gør billedet større på mobile */
-    }
+/* Hero sektion */
+.hero-container {
+    text-align: center;
+    padding: 20px;
+}
 
-    #hero h1 {
-        font-size: 1.2rem; /* Mindre skriftstørrelse */
-        letter-spacing: 5px; /* Mindre bogstavafstand */
-    }
+.hero-container h1 {
+    font-size: 24px; /* Juster skriftstørrelse for overskrift */
+    margin-bottom: 10px;
+}
 
-    #hero h2 {
-        font-size: 2rem; /* Justeret skriftstørrelse */
-        letter-spacing: 3px;
-    }
+.hero-container p {
+    font-size: 16px; /* Juster skriftstørrelse for tekst */
+}
 
-    /* Forside, Om, Velkommen, Ydelser sektioner */
-    section {
-        padding: 1rem;
-    }
+/* Velkommen sektion */
+.velkommen-container {
+    padding: 20px;
+    text-align: center;
+}
 
-    /* Columns layout i 'Velkommen' sektionen */
-    #velkommen .columns {
-        flex-direction: column; /* Ændrer til kolonnevisning */
-        gap: 1rem;
-    }
+.velkommen-container h2 {
+    font-size: 20px; /* Juster skriftstørrelse for overskrift */
+}
 
-    /* Juster om-sektionen */
-    .om-container {
-        flex-direction: column;
-    }
+.velkommen-container p {
+    font-size: 14px; /* Juster skriftstørrelse for tekst */
+}
 
-    .om-image {
-        max-width: 100%; /* Gør billedet 100% bredt */
-        margin-bottom: 1rem; /* Giver lidt afstand under billedet */
-    }
+/* Om sektion */
+.om-container {
+    padding: 20px;
+    text-align: center;
+}
 
-    .om-text {
-        text-align: center; /* Centrér teksten på små skærme */
-    }
+.om-container h2 {
+    font-size: 20px; /* Juster skriftstørrelse for overskrift */
+}
 
-    /* Ydelser */
-    .ydelser-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.om-container p {
+    font-size: 14px; /* Juster skriftstørrelse for tekst */
+}
 
-    .ydelse {
-        width: 100%; /* Gør ydelserne fulde bredde */
-    }
+/* Ydelser sektion */
+.ydelser-container {
+    padding: 20px;
+    text-align: center;
+}
 
-    /* Kontakt container */
-    .kontakt-container {
-        width: 90%; /* Reducér bredde på mobile */
-    }
+.ydelser-container h2 {
+    font-size: 20px; /* Juster skriftstørrelse for overskrift */
+}
 
-    .kontakt-container h2 {
-        font-size: 2rem; /* Mindre skriftstørrelse */
-    }
+.ydelser-container .service {
+    margin-bottom: 20px; /* Mellemrum mellem serviceelementer */
+}
 
-    .kontakt-container p {
-        font-size: 1rem;
-    }
+.ydelser-container .service img {
+    max-width: 100%; /* Gør billeder responsivt */
+}
 
-    .kontakt-container .kontakt-button {
-        padding: 0.5rem 1rem; /* Mindre padding for mobil */
-    }
+/* Kontakt sektion */
+.kontakt-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.kontakt-container h2 {
+    font-size: 20px; /* Juster skriftstørrelse for overskrift */
+}
+
+.kontakt-container p {
+    font-size: 14px; /* Juster skriftstørrelse for tekst */
+}
+
+.kontakt-container .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontakt-container .contact-form input,
+.kontakt-container .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px; /* Mellemrum mellem inputfelter */
+    padding: 10px;
+    font-size: 14px; /* Juster skriftstørrelse for inputfelter */
+}
+
+.kontakt-container .contact-form button {
+    padding: 10px 20px;
+    font-size: 14px; /* Juster skriftstørrelse for knap */
+}
+}
 }
