@@ -574,7 +574,7 @@ footer p {
     
     .hero-content h1,
     .hero-content h2 {
-        position: absolute;
+        position: center;
         top: 50%; /* Juster denne værdi for at flytte teksten vertikalt */
         left: 50%;
         transform: translate(-50%, -50%); /* Centrer teksten */
