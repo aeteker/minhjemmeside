@@ -573,7 +573,7 @@ footer p {
         justify-content: center; /* Centrerer vertikalt */
         align-items: center; /* Centrerer horisontalt */
         text-align: center; /* Centrerer teksten i elementerne */
-        height: 100vh; /* Sørger for, at hero sektionen fylder hele viewport højden */
+        height: 50vh; /* Sørger for, at hero sektionen fylder hele viewport højden */
         background-size: cover; /* Gør, at baggrundsbilledet fylder hele området */
         background-position: center; /* Centrerer baggrundsbilledet */
     }
