@@ -573,7 +573,7 @@ footer p {
         justify-content: center; /* Centrerer vertikalt */
         align-items: center; /* Centrerer horisontalt */
         text-align: center; /* Centrerer teksten i elementerne */
-        min-height: 60vh; /* Juster højden til 60% af viewport-højden */
+        min-height: 10vh; /* Juster højden til 60% af viewport-højden */
         background-size: cover; /* Gør, at baggrundsbilledet fylder hele området */
         background-position: center; /* Centrerer baggrundsbilledet */
         background-repeat: no-repeat; /* Forhindrer billedet i at gentage */
