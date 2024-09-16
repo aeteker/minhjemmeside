@@ -536,26 +536,37 @@ footer p {
     transform: translateY(0); /* Flytter elementet på plads */
 }
 
-@media screen and (max-width: 768px) {
-    /* Navigation */
-    @media (max-width: 768px) {
-        .nav-container {
-            width: 100%; /* Sørger for, at navigationen strækker sig over hele skærmen */
-        }
-    
-        .logo a {
-            font-size: 1.8rem; /* Mindre skriftstørrelse til logoet */
-        }
-    
-        nav ul {
-            gap: 0.5rem; /* Mindre afstand mellem navigationslinks */
-        }
-    
-        nav ul li a {
-            font-size: 1.5rem; /* Mindre skriftstørrelse til links */
-        }
+/* Mobilversion */
+@media only screen and (max-width: 600px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
+    .nav-container .logo {
+        font-size: 16px; /* Juster logo-størrelsen for mobil */
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Mellemrum mellem navigationselementer */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Juster skriftstørrelse for links */
+    }
+
+    /* Juster størrelsen på knapper i navigationen */
+    .nav-container .nav-button {
+        font-size: 14px; /* Juster skriftstørrelsen for knapper */
+    }
+
 
     /* Hero section */
     #hero {
