@@ -575,12 +575,12 @@ footer p {
 }
 
 .hero-container h1 {
-    font-size: 10px; /* Juster skriftstørrelse for overskrift */
-    margin-bottom: 7px;
+    font-size: 4px; /* Juster skriftstørrelse for overskrift */
+    margin-bottom: 20px;
 }
 
 .hero-container p {
-    font-size: 14px; /* Juster skriftstørrelse for tekst */
+    font-size: 7px; /* Juster skriftstørrelse for tekst */
 }
 
 /* Velkommen sektion */
