@@ -567,17 +567,27 @@ footer p {
         font-size: 14px; /* Juster skriftstørrelsen for knapper */
     }
 
-    /* Hero sektion */
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centrerer vertikalt */
+        align-items: center; /* Centrerer horisontalt */
+        text-align: center; /* Centrerer teksten i elementerne */
+        height: 100vh; /* Sørger for, at hero sektionen fylder hele viewport højden */
+        background-size: cover; /* Gør, at baggrundsbilledet fylder hele området */
+        background-position: center; /* Centrerer baggrundsbilledet */
+    }
+    
     #hero h1 {
         font-size: 0.7rem; /* Juster font-størrelsen som ønsket */
-        margin-bottom: 50rem; /* Juster padding-top for at flytte h1 lavere */
+        margin: 0; /* Fjern margin, så teksten er centreret korrekt */
     }
-
+    
     #hero h2 {
         font-size: 0.5rem; /* Juster font-størrelsen som ønsket */
-        margin-bottom: 45rem; /* Juster padding-top for at flytte h2 lavere */
+        margin: 0; /* Fjern margin, så teksten er centreret korrekt */
     }
-
+    
     #hero p {
         font-size: 10px; /* Juster skriftstørrelse for tekst */
     }
