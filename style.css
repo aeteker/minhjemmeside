@@ -567,20 +567,28 @@ footer p {
         font-size: 14px; /* Juster skriftstørrelsen for knapper */
     }
 
-    /* Hero sektion */
-    .hero-content h1 {
-        font-size: 1rem; /* Juster font-størrelsen som ønsket */
-        padding-top: 4rem; /* Juster padding-top for at flytte h1 lavere */
+    .hero-content {
+        position: relative;
+        /* Juster andre stilarter som nødvendigt */
     }
-
+    
+    .hero-content h1,
     .hero-content h2 {
-        font-size: 0.5rem; /* Juster font-størrelsen som ønsket */
-        padding-top: 2rem; /* Juster padding-top for at flytte h2 lavere */
+        position: absolute;
+        top: 50%; /* Juster denne værdi for at flytte teksten vertikalt */
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centrer teksten */
+        /* Juster andre stilarter som nødvendigt */
     }
-
-    #hero p {
-        font-size: 10px; /* Juster skriftstørrelse for tekst */
+    
+    .hero-content h1 {
+        font-size: 2rem; /* Juster font-størrelsen som ønsket */
     }
+    
+    .hero-content h2 {
+        font-size: 1.5rem; /* Juster font-størrelsen som ønsket */
+    }
+    
 
     /* Velkommen sektion */
     #velkommen h2 {
