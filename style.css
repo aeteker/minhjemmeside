@@ -573,23 +573,25 @@ footer p {
         justify-content: center; /* Centrerer vertikalt */
         align-items: center; /* Centrerer horisontalt */
         text-align: center; /* Centrerer teksten i elementerne */
-        height: 50vh; /* Sørger for, at hero sektionen fylder hele viewport højden */
+        min-height: 60vh; /* Juster højden til 60% af viewport-højden */
         background-size: cover; /* Gør, at baggrundsbilledet fylder hele området */
         background-position: center; /* Centrerer baggrundsbilledet */
+        background-repeat: no-repeat; /* Forhindrer billedet i at gentage */
     }
     
     #hero h1 {
-        font-size: 0.7rem; /* Juster font-størrelsen som ønsket */
-        margin: 0; /* Fjern margin, så teksten er centreret korrekt */
+        font-size: 1.5rem; /* Juster font-størrelsen som ønsket */
+        margin: 0.5rem 0; /* Juster margin for at give lidt afstand omkring teksten */
     }
     
     #hero h2 {
-        font-size: 0.5rem; /* Juster font-størrelsen som ønsket */
-        margin: 0; /* Fjern margin, så teksten er centreret korrekt */
+        font-size: 1.2rem; /* Juster font-størrelsen som ønsket */
+        margin: 0.5rem 0; /* Juster margin for at give lidt afstand omkring teksten */
     }
     
     #hero p {
-        font-size: 10px; /* Juster skriftstørrelse for tekst */
+        font-size: 12px; /* Juster skriftstørrelse for tekst */
+        margin: 0; /* Fjern margin for at centrere teksten korrekt */
     }
 
     /* Velkommen sektion */
