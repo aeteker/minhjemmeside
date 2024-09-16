@@ -544,7 +544,7 @@ footer p {
         }
     
         .logo a {
-            font-size: 1.2rem; /* Mindre skriftstørrelse til logoet */
+            font-size: 0.8rem; /* Mindre skriftstørrelse til logoet */
         }
     
         nav ul {
@@ -552,7 +552,7 @@ footer p {
         }
     
         nav ul li a {
-            font-size: 0.9rem; /* Mindre skriftstørrelse til links */
+            font-size: 0.5rem; /* Mindre skriftstørrelse til links */
         }
     }
     
