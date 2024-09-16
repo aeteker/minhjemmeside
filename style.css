@@ -535,3 +535,85 @@ footer p {
     opacity: 1; /* Gør elementet synligt */
     transform: translateY(0); /* Flytter elementet på plads */
 }
+
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Hero section */
+    #hero {
+        height: 50vh; /* Juster hero-højden for mindre skærme */
+        background-size: cover; /* Gør billedet større på mobile */
+    }
+
+    #hero h1 {
+        font-size: 1.2rem; /* Mindre skriftstørrelse */
+        letter-spacing: 5px; /* Mindre bogstavafstand */
+    }
+
+    #hero h2 {
+        font-size: 2rem; /* Justeret skriftstørrelse */
+        letter-spacing: 3px;
+    }
+
+    /* Forside, Om, Velkommen, Ydelser sektioner */
+    section {
+        padding: 1rem;
+    }
+
+    /* Columns layout i 'Velkommen' sektionen */
+    #velkommen .columns {
+        flex-direction: column; /* Ændrer til kolonnevisning */
+        gap: 1rem;
+    }
+
+    /* Juster om-sektionen */
+    .om-container {
+        flex-direction: column;
+    }
+
+    .om-image {
+        max-width: 100%; /* Gør billedet 100% bredt */
+        margin-bottom: 1rem; /* Giver lidt afstand under billedet */
+    }
+
+    .om-text {
+        text-align: center; /* Centrér teksten på små skærme */
+    }
+
+    /* Ydelser */
+    .ydelser-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ydelse {
+        width: 100%; /* Gør ydelserne fulde bredde */
+    }
+
+    /* Kontakt container */
+    .kontakt-container {
+        width: 90%; /* Reducér bredde på mobile */
+    }
+
+    .kontakt-container h2 {
+        font-size: 2rem; /* Mindre skriftstørrelse */
+    }
+
+    .kontakt-container p {
+        font-size: 1rem;
+    }
+
+    .kontakt-container .kontakt-button {
+        padding: 0.5rem 1rem; /* Mindre padding for mobil */
+    }
+}
