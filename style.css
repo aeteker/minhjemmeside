@@ -567,55 +567,44 @@ footer p {
         font-size: 14px; /* Juster skriftstørrelsen for knapper */
     }
 
+    /* Hero sektion */
+    #hero h1 {
+        font-size: 1.5rem; /* Juster skriftstørrelse for overskrift */
+        margin-bottom: 10px;
+    }
 
-/* Hero sektion */
-.hero-container {
-    text-align: center;
-    padding: 20px;
-}
+    #hero h2 {
+        font-size: 1rem; /* Juster skriftstørrelse for underoverskrift */
+        margin-bottom: 10px;
+    }
 
-.hero-container h1 {
-    font-size: 1.5rem; /* Juster skriftstørrelse for overskrift */
-    margin-bottom: 10px;
-}
+    #hero p {
+        font-size: 10px; /* Juster skriftstørrelse for tekst */
+    }
 
-.hero-container h2 {
-    font-size: 1rem; /* Juster skriftstørrelse for underoverskrift */
-    margin-bottom: 10px;
-}
+    /* Velkommen sektion */
+    #velkommen h2 {
+        font-size: 20px; /* Juster skriftstørrelse for overskrift */
+    }
 
-.hero-container p {
-    font-size: 1rem; /* Juster skriftstørrelse for tekst */
-}
-}
+    #velkommen p {
+        font-size: 14px; /* Juster skriftstørrelse for tekst */
+    }
 
-/* Velkommen sektion */
-.velkommen-container {
-    padding: 20px;
-    text-align: center;
-}
+    /* Om sektion */
+    .om-container .om-title {
+        font-size: 18px; /* Juster skriftstørrelse for titel */
+    }
 
-.velkommen-container h2 {
-    font-size: 20px; /* Juster skriftstørrelse for overskrift */
-}
+    .om-container .om-name {
+        font-size: 24px; /* Juster skriftstørrelse for navn */
+    }
 
-.velkommen-container p {
-    font-size: 14px; /* Juster skriftstørrelse for tekst */
-}
-
-/* Om sektion */
-.om-container {
-    padding: 20px;
-    text-align: center;
+    .om-container .undertekst {
+        font-size: 14px; /* Juster skriftstørrelse for undertekst */
+    }
 }
 
-.om-container h2 {
-    font-size: 20px; /* Juster skriftstørrelse for overskrift */
-}
-
-.om-container p {
-    font-size: 14px; /* Juster skriftstørrelse for tekst */
-}
 
 /* Ydelser sektion */
 .ydelser-container {
