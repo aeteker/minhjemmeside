@@ -575,8 +575,8 @@ footer p {
 }
 
 .hero-container h1 {
-    font-size: 4px; /* Juster skriftstørrelse for overskrift */
-    margin-bottom: 20px;
+    font-size: 6px; /* Juster skriftstørrelse for overskrift */
+    margin-bottom: 15px;
 }
 
 .hero-container p {
