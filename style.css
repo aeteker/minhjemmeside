@@ -569,33 +569,34 @@ footer p {
 
 /* Hero sektion til mobilversionen */
 #hero {
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    height: 70vh !important; /* Behold denne værdi */
+    background: url('vvsventilation.jpg') no-repeat center center; /* Fjern contain */
+    height: 70vh; /* Justér højden */
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centerer indholdet vertikalt */
-    align-items: center; /* Centerer indholdet horisontalt */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover; /* Dæk hele området */
 }
 
+.hero-content {
+    position: relative; /* Gør det muligt at styre indholdets position */
+    padding: 0; /* Justér padding for at flytte teksten */
+}
+
+/* Hero section h1 styling */
 #hero h1 {
-    font-size: 1.2rem !important;
-    color: black !important;
-    letter-spacing: 1px;
-    margin-top: 20vh !important; /* Juster denne værdi for at flytte h1 længere ned */
-    margin-bottom: 0.5vh; /* Mellemrum til h2 */
+    font-size: 1.2rem; /* Størrelse på h1 */
+    color: black; /* Sort tekst */
+    margin-top: 10vh; /* Juster denne værdi for at flytte teksten længere ned */
+    margin-bottom: 1vh; /* Mellemrum til h2 */
 }
 
+/* Hero section h2 styling */
 #hero h2 {
-    font-size: 0.9rem !important;
-    color: black !important;
-    letter-spacing: 1px;
-    margin: 0; /* Fjern margin for at undgå unødvendig plads */
+    font-size: 0.9rem; /* Mindre størrelse på h2 */
+    color: black;
+    margin: 0; /* Fjern margin */
 }
-
-
-
 
 
     
