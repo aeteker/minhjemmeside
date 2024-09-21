@@ -581,7 +581,7 @@ footer p {
     color: black !important; /* Sort tekst */
     text-align: center; /* Centrerer teksten horisontalt */
     letter-spacing: 1px;
-    padding-top: 14vh !important; /* Skubber h1 lidt ned fra toppen */
+    margin-top: 14vh !important; /* Flytter h1 længere ned */
     margin-bottom: 1vh; /* Reducer mellemrum til h2 */
 }
 
@@ -591,8 +591,8 @@ footer p {
     text-align: center;
     letter-spacing: 1px;
     margin: 0; /* Fjern default margin for at undgå unødvendig plads */
-    padding-top: 0; /* Ingen ekstra plads mellem h1 og h2 */
 }
+
 
     
 
