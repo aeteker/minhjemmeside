@@ -581,7 +581,7 @@ footer p {
     color: black !important; /* Sort tekst */
     text-align: center; /* Centrerer teksten horisontalt */
     letter-spacing: 1px;
-    margin-top: 14vh !important; /* Flytter h1 længere ned */
+    margin-top: 20vh !important; /* Flytter h1 længere ned */
     margin-bottom: 1vh !important; /* Reducer mellemrum til h2 */
 }
 
