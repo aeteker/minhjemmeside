@@ -575,7 +575,7 @@ footer p {
     justify-content: center; /* Centrér horisontalt */
     align-items: center; /* Centrér vertikalt */
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-size: contain; /* Sørg for, at billedet ikke forstørres */
     position: relative; /* Sørg for, at det kan fungere med .hero-content */
 }
@@ -589,17 +589,20 @@ footer p {
 }
 
 #hero h1 {
-    font-size: 0.8rem !important;
+    font-size: 0.6rem !important; /* Mindre skriftstørrelse */
     color: #000 !important;
     margin: 0 !important; /* Fjern margin */
     margin-bottom: 0.5rem !important;
+    letter-spacing: 0.1rem; /* Mindre mellemrum mellem bogstaverne */
 }
 
 #hero h2 {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important; /* Mindre skriftstørrelse */
     color: #000 !important;
     margin: 0 !important;
+    letter-spacing: 0.1rem; /* Mindre mellemrum mellem bogstaverne */
 }
+
 
 
 
