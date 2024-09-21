@@ -572,7 +572,7 @@ footer p {
     background-size: cover !important; /* Baggrundsbilledet dækker hele området */
     background-position: center !important;
     background-repeat: no-repeat !important;
-    height: 50vh !important; /* Begrænser højden til 50% af viewportens højde */
+    height: 70vh !important; /* Begrænser højden til 50% af viewportens højde */
 }
 
 /* Tekst styling */
