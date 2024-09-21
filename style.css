@@ -573,29 +573,30 @@ footer p {
     flex-direction: column;
     justify-content: center; /* Centrerer vertikalt */
     align-items: center; /* Centrerer horisontalt */
-    text-align: center; /* Centrerer teksten */
-    background-size: cover; /* Dækker hele området med baggrundsbilledet */
-    background-position: center; /* Centrerer baggrundsbilledet */
-    background-repeat: no-repeat;
-    height: 60vh; /* Reducer højden af hero sektionen til 60% af viewporten */
-    padding-top: 10vh; /* Tilføjer lidt padding for at flytte teksten lavere */
+    text-align: center;
+    background-size: cover !important; /* Sørger for at billedet dækker containeren */
+    background-position: center !important; /* Centrerer baggrundsbilledet */
+    background-repeat: no-repeat !important;
+    height: 50vh !important; /* Mindre højde på hero sektionen */
+    padding-top: 10vh !important; /* Flytter indholdet længere ned */
     margin: 0;
 }
 
 #hero h1 {
-    font-size: 0.8rem; /* Lille skriftstørrelse til h1 */
-    margin: 0;
+    font-size: 0.8rem !important; /* Lille skriftstørrelse til h1 */
+    margin: 0 !important;
 }
 
 #hero h2 {
-    font-size: 0.6rem; /* Lille skriftstørrelse til h2 */
-    margin: 0;
+    font-size: 0.6rem !important; /* Lille skriftstørrelse til h2 */
+    margin: 0 !important;
 }
 
 #hero p {
-    font-size: 0.5rem; /* Lille skriftstørrelse for tekst */
-    margin: 0;
+    font-size: 0.5rem !important; /* Juster skriftstørrelse for tekst */
+    margin: 0 !important;
 }
+
 
 
     /* Velkommen sektion */
