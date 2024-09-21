@@ -576,14 +576,14 @@ footer p {
     align-items: center; /* Centrér vertikalt */
     text-align: center;
     margin-top: 2rem;
-    background-size: cover; /* Dæk hele området */
+    background-size: contain; /* Sørg for, at billedet ikke forstørres */
     position: relative; /* Sørg for, at det kan fungere med .hero-content */
 }
 
 .hero-content {
     position: absolute; /* Placerer indholdet i forhold til #hero */
-    top: 50%; /* Justér denne værdi for at flytte teksten op eller ned */
-    left: 30%; /* Centrér indholdet */
+    top: 30%; /* Justér denne værdi for at flytte teksten op eller ned */
+    left: 50%; /* Centrér indholdet */
     transform: translate(-50%, -50%); /* Flyt indholdet tilbage til center */
     padding: 0;
 }
