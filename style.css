@@ -573,7 +573,7 @@ footer p {
     background-position: center !important;
     background-repeat: no-repeat !important;
     height: 70vh !important;
-    padding-top: 20vh; /* Juster denne værdi for at flytte hele indholdet længere ned */
+    padding-top: 10vh; /* Juster denne værdi for at flytte hele indholdet længere ned */
 }
 
 #hero h1 {
@@ -581,7 +581,8 @@ footer p {
     color: black !important;
     text-align: center;
     letter-spacing: 1px;
-    margin: 0; /* Fjern margin for at undgå unødvendig plads */
+    margin-top: 5vh; /* Flytter h1 længere ned */
+    margin-bottom: 1vh; /* Reducer mellemrum til h2 */
 }
 
 #hero h2 {
@@ -589,8 +590,10 @@ footer p {
     color: black !important;
     text-align: center;
     letter-spacing: 1px;
-    margin: 0; /* Fjern margin for at undgå unødvendig plads */
+    margin-top: 1vh; /* Flytter h2 lidt længere ned */
+    margin: 0; /* Fjern default margin for at undgå unødvendig plads */
 }
+
 
 
 
