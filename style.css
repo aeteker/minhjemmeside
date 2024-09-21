@@ -572,24 +572,28 @@ footer p {
     background-size: cover !important; /* Baggrundsbilledet dækker hele området */
     background-position: center !important;
     background-repeat: no-repeat !important;
-    height: 70vh !important; /* Begrænser højden til 50% af viewportens højde */
+    height: 70vh !important; /* Juster højden til ønsket størrelse */
 }
 
 /* Tekst styling */
-#hero h1, #hero h2 {
+#hero h1 {
+    font-size: 1.2rem !important; /* Størrelse på h1 */
     color: black !important; /* Sort tekst */
     text-align: center; /* Centrerer teksten horisontalt */
     letter-spacing: 1px;
-    padding-top: 10vh;
-}
-
-#hero h1 {
-    font-size: 0.5rem !important;
+    padding-top: 10vh; /* Skubber h1 lidt ned fra toppen */
+    margin-bottom: 1vh; /* Reducer mellemrum til h2 */
 }
 
 #hero h2 {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important; /* Mindre størrelse på h2 */
+    color: black !important;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0; /* Fjern default margin for at undgå unødvendig plads */
+    padding-top: 0; /* Ingen ekstra plads mellem h1 og h2 */
 }
+
     
 
     /* Velkommen sektion */
