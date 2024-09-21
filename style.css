@@ -567,30 +567,35 @@ footer p {
         font-size: 14px; /* Juster skriftstørrelsen for knapper */
     }
 
-    #hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        /*height: 100vh;  Sørger for at hero sektionen fylder hele viewporten */
-        background-size: cover;
-      }
-    
-      #hero h1 {
-        font-size: 0.5rem; /* Meget lille skriftstørrelse til h1 */
-        margin: 0;
-      }
-    
-      #hero h2 {
-        font-size: 0.3rem; /* Meget lille skriftstørrelse til h2 */
-        margin: 0;
-      }
-    }
-    #hero p {
-        font-size: 0.3rem; /* Juster skriftstørrelse for tekst */
-        margin: 0; /* Fjern margin for at centrere teksten korrekt */
-    }
+/* Hero sektion til mobilversionen */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrerer vertikalt */
+    align-items: center; /* Centrerer horisontalt */
+    text-align: center; /* Centrerer teksten */
+    background-size: cover; /* Dækker hele området med baggrundsbilledet */
+    background-position: center; /* Centrerer baggrundsbilledet */
+    background-repeat: no-repeat;
+    height: 100vh; /* Sørger for, at hero sektionen fylder hele viewporten */
+    padding: 0;
+    margin: 0;
+}
+
+#hero h1 {
+    font-size: 0.8rem; /* Lille skriftstørrelse til h1 */
+    margin: 0;
+}
+
+#hero h2 {
+    font-size: 0.6rem; /* Lille skriftstørrelse til h2 */
+    margin: 0;
+}
+
+#hero p {
+    font-size: 0.5rem; /* Lille skriftstørrelse for tekst */
+    margin: 0; /* Fjern margin */
+}
 
     /* Velkommen sektion */
     #velkommen h2 {
