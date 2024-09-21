@@ -569,35 +569,36 @@ footer p {
 
 /* Hero sektion til mobilversionen */
 #hero {
-    display: flex;
-    flex-direction: column; /* Lægger h1, h2 og p i kolonner */
-    justify-content: center; /* Centrerer indhold vertikalt */
-    align-items: center; /* Centrerer indhold horisontalt */
-    text-align: center;
-    background-size: cover !important; /* Sikrer at baggrundsbilledet dækker */
+    background-size: cover !important; /* Baggrundsbilledet dækker hele området */
     background-position: center !important;
     background-repeat: no-repeat !important;
     height: 50vh !important; /* Begrænser højden til 50% af viewportens højde */
 }
 
-#hero h1, #hero h2, #hero p {
-    color: black !important; /* Ændrer tekstfarven til sort */
+/* Tekst styling */
+#hero h1, #hero h2 {
+    color: black !important; /* Sort tekst */
+    text-align: center; /* Centrerer teksten horisontalt */
+    margin: 0;
 }
 
+/* Justering af h1 */
 #hero h1 {
-    font-size: 0.8rem !important;
-    margin: 0;
+    font-size: 0.8rem !important; /* Mindre skriftstørrelse til h1 */
+    padding-top: 10vh; /* Skubber h1 længere ned */
 }
 
+/* Justering af h2 */
 #hero h2 {
-    font-size: 0.6rem !important;
-    margin: 0;
+    font-size: 0.6rem !important; /* Mindre skriftstørrelse til h2 */
+    padding-top: 2vh; /* Skubber h2 længere ned under h1 */
 }
 
 #hero p {
-    font-size: 0.5rem !important;
+    font-size: 0.5rem !important; /* Mindre skriftstørrelse til p */
     margin: 0;
 }
+
 
 
 
