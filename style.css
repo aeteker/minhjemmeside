@@ -583,7 +583,7 @@ footer p {
     position: absolute;
     top: 40%; /* Justér denne værdi for at flytte teksten ned */
     left: 50%;
-    transform: translate(-50%, -50%);
+    
 }
 
 
