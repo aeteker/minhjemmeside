@@ -581,6 +581,7 @@ footer p {
     text-align: center; /* Centrerer teksten horisontalt */
     letter-spacing: 1px;
     padding-top: 15vh; /* Skubber h1 længere ned */
+    font-size: 1rem;
 }
 
 
