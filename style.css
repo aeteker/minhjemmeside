@@ -587,7 +587,7 @@ footer p {
 #hero h1 {
     font-size: 1.2rem; /* Størrelse på h1 */
     color: black; /* Sort tekst */
-    margin-top: 10vh; /* Juster denne værdi for at flytte teksten længere ned */
+    margin-top: 20vh; /* Juster denne værdi for at flytte teksten længere ned */
     margin-bottom: 1vh; /* Mellemrum til h2 */
 }
 
