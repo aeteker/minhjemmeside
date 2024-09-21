@@ -580,8 +580,8 @@ footer p {
     }
 
     .hero-content {
-        position: relative; /* Sørg for, at indholdet kan placeres korrekt */
-        top: 20%; /* Justér denne værdi for at flytte teksten ned */
+        position: center; /* Sørg for, at indholdet kan placeres korrekt */
+        top: 30%; /* Justér denne værdi for at flytte teksten ned */
         padding: 0;
     }
 
