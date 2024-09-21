@@ -583,21 +583,22 @@ footer p {
     .hero-content {
         position: relative;
         padding: 0;
-        top: 20%; /* Juster dette for at flytte teksten ned */
+        top: 30% !important; /* Juster dette for at flytte teksten ned */
     }
 
-    #hero h1 {
-        font-size: 0.8rem;
-        color: #000;
-        margin-top: 20%;
-        margin-bottom: 0.5rem;
-    }
+#hero h1 {
+    font-size: 0.8rem !important;
+    color: #000 !important;
+    margin: 0 !important; /* Fjern margin-top */
+    margin-bottom: 0.5rem !important;
+}
 
-    #hero h2 {
-        font-size: 1rem;
-        color: #000;
-        margin: 0;
-    }
+#hero h2 {
+    font-size: 1rem !important;
+    color: #000 !important;
+    margin: 0 !important;
+}
+
 }
     
 
