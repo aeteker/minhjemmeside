@@ -569,29 +569,29 @@ footer p {
 
 /* Hero sektion til mobilversionen */
 #hero {
-    background-size: cover !important; /* Baggrundsbilledet dækker hele området */
+    background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    height: 70vh !important; /* Juster højden til ønsket størrelse */
+    height: 70vh !important;
+    padding-top: 20vh; /* Juster denne værdi for at flytte hele indholdet længere ned */
 }
 
-/* Tekst styling */
 #hero h1 {
-    font-size: 1.2rem !important; /* Størrelse på h1 */
-    color: black !important; /* Sort tekst */
-    text-align: center; /* Centrerer teksten horisontalt */
-    letter-spacing: 1px;
-    margin-top: 20vh !important; /* Flytter h1 længere ned */
-    margin-bottom: 1vh !important; /* Reducer mellemrum til h2 */
-}
-
-#hero h2 {
-    font-size: 0.9rem !important; /* Mindre størrelse på h2 */
+    font-size: 1.2rem !important;
     color: black !important;
     text-align: center;
     letter-spacing: 1px;
-    margin: 0 !important; /* Fjern default margin for at undgå unødvendig plads */
+    margin: 0; /* Fjern margin for at undgå unødvendig plads */
 }
+
+#hero h2 {
+    font-size: 0.9rem !important;
+    color: black !important;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0; /* Fjern margin for at undgå unødvendig plads */
+}
+
 
 
     
