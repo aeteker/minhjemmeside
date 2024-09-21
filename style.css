@@ -598,22 +598,22 @@ footer p {
 /* Hero section h1 styling */
 #hero h1 {
     font-family: 'Roboto Slab'; /* Ændret til Roboto Slab */
-    font-size: 1.5rem; /* Mindre skriftstørrelse end h2 */
+    font-size: 0.8rem; /* Mindre skriftstørrelse end h2 */
     font-weight: lighter; /* Tynd skrift */
     margin-top: 20%;
-    margin-bottom: 1rem; /* Fjern margin */
+    margin-bottom: 0.5rem; /* Fjern margin */
     color: #000000; /* Sort farve */
-    letter-spacing: 10px;
+    letter-spacing: 1rem;
 }
 
 /* Hero section h2 styling */
 #hero h2 {
     font-family: 'Roboto slab'; /* Ændret til Roboto slab*/
-    font-size: 3rem; /* Stor skriftstørrelse */
+    font-size: 1rem; /* Stor skriftstørrelse */
     font-weight: lighter; /* let vægt */
     color: #000; /* Sort farve */
     margin: 0; /* Fjern margin */
-    letter-spacing: 5px;
+    letter-spacing: 1rem;
 }
 
 .hero-content h1 {
