@@ -588,7 +588,7 @@ footer p {
       }
     }
     #hero p {
-        font-size: 12px; /* Juster skriftstørrelse for tekst */
+        font-size: 0.3rem; /* Juster skriftstørrelse for tekst */
         margin: 0; /* Fjern margin for at centrere teksten korrekt */
     }
 
