@@ -569,33 +569,40 @@ footer p {
 
 /* Hero sektion til mobilversionen */
 #hero {
+    position: relative; /* Gør det muligt at placere indhold absolut */
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrerer vertikalt */
-    align-items: center; /* Centrerer horisontalt */
+    justify-content: center; /* Centrerer indhold horisontalt */
+    align-items: center; /* Centrerer indhold vertikalt */
     text-align: center;
-    background-size: cover !important; /* Sørger for at billedet dækker containeren */
-    background-position: center !important; /* Centrerer baggrundsbilledet */
+    background-size: cover !important; /* Sikrer at baggrundsbilledet dækker */
+    background-position: center !important;
     background-repeat: no-repeat !important;
-    height: 50vh !important; /* Mindre højde på hero sektionen */
-    padding-top: 10vh !important; /* Flytter indholdet længere ned */
-    margin: 0;
+    height: 50vh !important; /* Begrænser højden til 50% af viewportens højde */
+}
+
+#hero h1, #hero h2, #hero p {
+    position: absolute; /* Positionerer teksten relativt til hero sektionen */
+    top: 50%; /* Placerer teksten 50% nede i containeren */
+    left: 50%; /* Placerer teksten 50% ind i containeren */
+    transform: translate(-50%, -50%); /* Sørger for at teksten er centreret */
+    color: white; /* Sikrer teksten er synlig på baggrunden */
 }
 
 #hero h1 {
-    font-size: 0.8rem !important; /* Lille skriftstørrelse til h1 */
-    margin: 0 !important;
+    font-size: 0.8rem !important;
+    margin: 0;
 }
 
 #hero h2 {
-    font-size: 0.6rem !important; /* Lille skriftstørrelse til h2 */
-    margin: 0 !important;
+    font-size: 0.6rem !important;
+    margin: 0;
 }
 
 #hero p {
-    font-size: 0.5rem !important; /* Juster skriftstørrelse for tekst */
-    margin: 0 !important;
+    font-size: 0.5rem !important;
+    margin: 0;
 }
+
 
 
 
