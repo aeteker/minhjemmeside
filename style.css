@@ -589,7 +589,7 @@ footer p {
     padding: 0rem; /* Reduceret padding for at flytte teksten højere op */
     border-radius: 10px;
     position: absolute; /* Placerer indholdet i forhold til hero-sektionen */
-    top: 1.0%; /* Juster denne værdi for at flytte teksten højere op */
+    top: 20%; /* Juster denne værdi for at flytte teksten højere op */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
