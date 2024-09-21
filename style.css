@@ -617,13 +617,13 @@ footer p {
 }
 
 .hero-content h1 {
-    font-size: 3rem; /* Juster størrelse efter behov */
-    letter-spacing: 1px; /* Linjeafstand mellem bogstaverne */
+    font-size: 0.8rem; /* Juster størrelse efter behov */
+    letter-spacing: 1rem; /* Linjeafstand mellem bogstaverne */
 }
 
 .hero-content h2 {
-    font-size: 1.5rem; /* Juster størrelse efter behov */
-    letter-spacing: 0.5px; /* Linjeafstand mellem bogstaverne */
+    font-size: 1rem; /* Juster størrelse efter behov */
+    letter-spacing: 0.5rem; /* Linjeafstand mellem bogstaverne */
 }
 
     
