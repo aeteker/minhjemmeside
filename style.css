@@ -574,25 +574,26 @@ footer p {
     background-repeat: no-repeat !important;
     height: 70vh !important; /* Behold denne værdi */
     display: flex;
-    flex-direction: column; /* Gør det muligt at styre indholdet */
-    justify-content: flex-start; /* Begynd med at justere indholdet fra toppen */
-    padding-top: 20vh; /* Flytter indholdet længere ned */
-    text-align: center;
+    flex-direction: column;
+    justify-content: center; /* Centerer indholdet vertikalt */
+    align-items: center; /* Centerer indholdet horisontalt */
 }
 
 #hero h1 {
     font-size: 1.2rem !important;
     color: black !important;
     letter-spacing: 1px;
-    margin: 0; /* Fjern margin for at undgå unødvendig plads */
+    margin-top: 10vh; /* Juster denne værdi for at flytte h1 længere ned */
+    margin-bottom: 0.5vh; /* Mellemrum til h2 */
 }
 
 #hero h2 {
     font-size: 0.9rem !important;
     color: black !important;
     letter-spacing: 1px;
-    margin: 1vh 0 0; /* Flytter h2 lidt længere ned fra h1 */
+    margin: 0; /* Fjern margin for at undgå unødvendig plads */
 }
+
 
 
 
