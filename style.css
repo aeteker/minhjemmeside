@@ -567,8 +567,8 @@ footer p {
         font-size: 14px; /* Juster skriftstørrelsen for knapper */
     }
 
-/* Hero sektion til mobilversionen */
-#hero {
+   /* Hero sektion til mobilversionen */
+    #hero {
         background: url('vvsventilation.jpg') no-repeat center center;
         height: 75vh;
         position: relative;
@@ -582,10 +582,10 @@ footer p {
 
     .hero-content {
         position: absolute; /* Sørg for, at indholdet kan placeres korrekt */
-        top: 30%; /* Justér denne værdi for at flytte teksten op eller ned */
+        top: 40%; /* Justér denne værdi for at flytte teksten op eller ned */
         left: 50%; /* Centrér indholdet */
         transform: translate(-50%, -50%); /* Flyt indholdet tilbage til center */
-        padding: 0;
+        padding: 0; /* Brug evt. padding i stedet */
     }
 
     #hero h1 {
