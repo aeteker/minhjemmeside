@@ -580,9 +580,12 @@ footer p {
 }
 
 .hero-content {
-    position: relative; /* Skift til relative */
-    padding: 0; /* Ingen padding */
+    position: absolute;
+    top: 40%; /* Justér denne værdi for at flytte teksten ned */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 #hero h1 {
     font-size: 0.8rem !important;
