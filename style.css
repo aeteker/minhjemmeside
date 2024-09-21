@@ -582,7 +582,7 @@ footer p {
     text-align: center; /* Centrerer teksten horisontalt */
     letter-spacing: 1px;
     margin-top: 14vh !important; /* Flytter h1 længere ned */
-    margin-bottom: 1vh; /* Reducer mellemrum til h2 */
+    margin-bottom: 1vh !important; /* Reducer mellemrum til h2 */
 }
 
 #hero h2 {
@@ -590,7 +590,7 @@ footer p {
     color: black !important;
     text-align: center;
     letter-spacing: 1px;
-    margin: 0; /* Fjern default margin for at undgå unødvendig plads */
+    margin: 0 !important; /* Fjern default margin for at undgå unødvendig plads */
 }
 
 
