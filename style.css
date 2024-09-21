@@ -567,7 +567,7 @@ footer p {
         font-size: 14px; /* Juster skriftstørrelsen for knapper */
     }
 
-   /* Hero sektion til mobilversionen */
+/* Hero sektion til mobilversionen */
 #hero {
     background: url('vvsventilation.jpg') no-repeat center center;
     height: 75vh;
@@ -580,22 +580,22 @@ footer p {
 }
 
 .hero-content {
-    position: relative; /* Skift til relative, så vi kan styre padding */
-    padding-top: 20vh; /* Flyt teksten længere ned */
+    position: relative; /* Skift til relative */
+    padding: 0; /* Ingen padding */
 }
 
 #hero h1 {
     font-size: 0.8rem !important;
     color: #000 !important;
-    margin: 0 !important; /* Fjern margin */
-    margin-bottom: 0.5rem !important;
+    margin: 20% 0 0; /* Brug margin-top for at flytte længere ned */
 }
 
 #hero h2 {
     font-size: 1rem !important;
     color: #000 !important;
-    margin: 0 !important;
+    margin: 0 !important; /* Ingen margin */
 }
+
 
 
     /* Velkommen sektion */
