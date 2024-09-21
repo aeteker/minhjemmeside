@@ -584,18 +584,18 @@ footer p {
 
 /* Justering af h1 */
 #hero h1 {
-    font-size: 0.8rem !important; /* Mindre skriftstørrelse til h1 */
+    font-size: 0.5rem !important; /* Mindre skriftstørrelse til h1 */
     padding-top: 10vh; /* Skubber h1 længere ned */
 }
 
 /* Justering af h2 */
 #hero h2 {
-    font-size: 0.6rem !important; /* Mindre skriftstørrelse til h2 */
+    font-size: 0.3rem !important; /* Mindre skriftstørrelse til h2 */
     padding-top: 2vh; /* Skubber h2 længere ned under h1 */
 }
 
 #hero p {
-    font-size: 0.5rem !important; /* Mindre skriftstørrelse til p */
+    font-size: 0.3rem !important; /* Mindre skriftstørrelse til p */
     margin: 0;
 }
 
