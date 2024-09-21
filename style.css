@@ -580,14 +580,17 @@ footer p {
     color: black !important; /* Sort tekst */
     text-align: center; /* Centrerer teksten horisontalt */
     letter-spacing: 1px;
-    padding-top: 15vh; /* Skubber h1 længere ned */
-    font-size: 1rem;
+    padding-top: 10vh;
 }
 
+#hero h1 {
+    font-size: 0.5rem !important;
+}
 
-
-
-
+#hero h2 {
+    font-size: 0.8rem !important;
+}
+    
 
     /* Velkommen sektion */
     #velkommen h2 {
