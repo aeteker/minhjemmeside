@@ -581,10 +581,11 @@ footer p {
 
 .hero-content {
     position: absolute;
-    top: 40%; /* Justér denne værdi for at flytte teksten ned */
+    top: 20%; /* Kan stadig være nødvendigt for placeringen */
     left: 50%;
-    
+    margin-top: 10vh; /* Justér denne værdi for at flytte teksten ned */
 }
+
 
 
 #hero h1 {
