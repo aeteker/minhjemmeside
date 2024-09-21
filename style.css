@@ -577,8 +577,8 @@ footer p {
     background-size: cover; /* Dækker hele området med baggrundsbilledet */
     background-position: center; /* Centrerer baggrundsbilledet */
     background-repeat: no-repeat;
-    height: 100vh; /* Sørger for, at hero sektionen fylder hele viewporten */
-    padding: 0;
+    height: 60vh; /* Reducer højden af hero sektionen til 60% af viewporten */
+    padding-top: 10vh; /* Tilføjer lidt padding for at flytte teksten lavere */
     margin: 0;
 }
 
@@ -594,8 +594,9 @@ footer p {
 
 #hero p {
     font-size: 0.5rem; /* Lille skriftstørrelse for tekst */
-    margin: 0; /* Fjern margin */
+    margin: 0;
 }
+
 
     /* Velkommen sektion */
     #velkommen h2 {
