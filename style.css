@@ -537,7 +537,7 @@ footer p {
 }
 
 /* Mobilversion */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .nav-container {
         display: flex;
         flex-direction: column;
@@ -573,34 +573,34 @@ footer p {
         height: 75vh;
         position: relative;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: center; /* Centrér vertikalt */
+        justify-content: center; /* Centrér horisontalt */
         text-align: center;
         margin-top: 2rem;
         background-size: cover; /* Dæk hele området */
     }
 
     .hero-content {
-        position: relative;
+        position: absolute; /* Sørg for, at indholdet kan placeres korrekt */
+        top: 30%; /* Justér denne værdi for at flytte teksten op eller ned */
+        left: 50%; /* Centrér indholdet */
+        transform: translate(-50%, -50%); /* Flyt indholdet tilbage til center */
         padding: 0;
-        top: 30% !important; /* Juster dette for at flytte teksten ned */
     }
 
-#hero h1 {
-    font-size: 0.8rem !important;
-    color: #000 !important;
-    margin: 0 !important; /* Fjern margin-top */
-    margin-bottom: 0.5rem !important;
-}
+    #hero h1 {
+        font-size: 0.8rem !important;
+        color: #000 !important;
+        margin: 0 !important; /* Fjern margin */
+        margin-bottom: 0.5rem !important;
+    }
 
-#hero h2 {
-    font-size: 1rem !important;
-    color: #000 !important;
-    margin: 0 !important;
+    #hero h2 {
+        font-size: 1rem !important;
+        color: #000 !important;
+        margin: 0 !important;
+    }
 }
-
-}
-    
 
     /* Velkommen sektion */
     #velkommen h2 {
@@ -624,6 +624,7 @@ footer p {
         font-size: 14px; /* Juster skriftstørrelse for undertekst */
     }
 }
+
 
 
 /* Ydelser sektion */
