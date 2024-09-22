@@ -573,18 +573,27 @@ footer p {
     flex-direction: column; /* Stak elementer vertikalt */
     align-items: center; /* Centrér indholdet */
     padding: 2rem 1rem; /* Tilføj padding for afstand */
+/* OM MIG sektion til mobilversion */
+#om {
+    padding: 2rem 1rem; /* Juster padding for mobilvisning */
+    text-align: center; /* Centrér teksten */
+}
+
+.om-container {
+    display: flex;
+    flex-direction: column; /* Stak elementer vertikalt */
+    align-items: center; /* Centrér indholdet */
 }
 
 .om-image {
     width: 100%; /* Gør billedet responsivt */
-    overflow: hidden;
 }
 
 .om-image img {
     width: 100%; /* Billedet fylder hele bredden */
-    height: auto; /* Behold højden proportional */
+    height: auto; /* Behold højde proportional */
+    max-height: 60vh; /* Juster højden efter behov */
     object-fit: cover; /* Fyld containeren uden at ændre billedforholdet */
-    filter: grayscale(80%); /* Behold effekten */
 }
 
 .om-text {
@@ -598,7 +607,6 @@ footer p {
     font-size: 1.5rem; /* Juster skriftstørrelse for mobil */
     font-weight: 500; /* Juster skriftvægt */
     color: #959191;
-    margin-top: 1rem; /* Tilføj margin over overskriften */
 }
 
 /* Specifik font til navnet */
@@ -607,8 +615,6 @@ footer p {
     font-family: 'Roboto Slab', serif;
     color: #333;
     margin: 0;
-    padding: 0;
-    line-height: 1;
 }
 
 /* Specifik font til underteksten */
@@ -617,12 +623,6 @@ footer p {
     font-size: 1rem; /* Juster skriftstørrelse for mobil */
     line-height: 1.4;
     color: #959191;
-    margin-top: 1rem; /* Juster margin for afstand */
-}
-
-/* LinkedIn og CV ikoner */
-.linkedin-container, .cv-container {
-    text-align: center; /* Centrér ikoner og links */
     margin-top: 1rem; /* Juster margin for afstand */
 }
 
