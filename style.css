@@ -623,7 +623,6 @@ footer p {
         max-width: 100%; /* Gør kolonnerne fuld bredde */
         text-align: center; /* Centrér teksten */
     }
-}
 
     /*om mig sektion mobilvisning*/
   #om {
@@ -685,15 +684,16 @@ footer p {
 
 /* Kontakt sektion */
  #parallax-window {
-        background-attachment: scroll; /* Deaktiver parallax-effekten på mobile enheder for bedre performance */
-        background-position: center; /* Sørg for, at billedet centrerer sig på mobilen */
+        background-attachment: scroll; /* Deaktiverer parallax-effekt på mobil for bedre performance */
+        background-position: center;
+        background-size: 200%; /* Formindsker billedet markant */
         height: 40vh; /* Mindre højde på mobilen */
     }
 
     /* Kontakt-container til mobil */
     .kontakt-container {
-        width: 90%; /* Mindre bredde for bedre tilpasning */
-        padding: 2rem; /* Mindre padding */
+        width: 90%;
+        padding: 2rem;
     }
 
     .kontakt-container h2 {
