@@ -606,30 +606,31 @@ footer p {
 
 /* OM MIG sektion til mobilversion */
 #om {
+    background: #f4f4f4;
+    padding: 2rem 1rem; /* Juster padding for mobilvisning */
     display: flex;
     flex-direction: column; /* Stak elementer vertikalt */
     align-items: center; /* Centrér indholdet */
-    padding: 2rem 1rem; /* Juster padding for mobilvisning */
 }
 
 .om-container {
-    display: flex; /* Skift til flex for at kunne centrere indhold */
-    flex-direction: column; /* Stak elementer vertikalt */
-    align-items: center; /* Centrér indholdet */
-    width: 100%; /* Sørg for, at containeren fylder hele bredden */
+    display: block; /* Skift til block for at få elementer til at stable sig */
+    padding: 1rem 0;
+    width: 100%; /* Sikre, at containeren fylder hele bredden */
 }
 
 .om-image {
     width: 100%; /* Gør billedet responsivt */
-    display: flex; /* Tilføj flex for centering */
-    justify-content: center; /* Centrér indholdet */
+    overflow: hidden;
+    position: relative; /* Tilføj positionering */
 }
 
 .om-image img {
     width: 100%; /* Billedet fylder hele bredden */
     height: auto; /* Behold højden proportional */
-    max-height: 70vh; /* Juster max højden for at undgå for meget plads */
     object-fit: cover; /* Fyld containeren uden at ændre billedforholdet */
+    max-height: 60vh; /* Maksimal højde for billedet */
+    filter: grayscale(80%); /* Behold effekten */
 }
 
 .om-text {
@@ -669,6 +670,7 @@ footer p {
     text-align: center; /* Centrér ikoner og links */
     margin-top: 1rem; /* Juster margin for afstand */
 }
+
 
 
 /* Ydelser sektion */
