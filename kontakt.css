@@ -80,6 +80,9 @@ nav.sticky ul li a:hover::after {
     display: none; /* Skjul som standard */
     flex-direction: column;
     cursor: pointer;
+    position: absolute; /* Gør positionen absolut */
+    right: 1rem; /* Placerer hamburger-menuen tæt på højre kant */
+    top: 1rem; /* Justerer afstand fra toppen */
     z-index: 1001; /* Sørg for, at den ligger over andre elementer */
 }
 
@@ -258,8 +261,24 @@ footer p {
     
     /* Juster hamburger-menuen */
     .hamburger {
-        display: flex; /* Vis hamburger-menuen på mobile skærme */
-        position: absolute;
-        right: 1rem; /* Placerer hamburger-menuen tæt på højre kant */
-        top: 1rem;
-        z-index: 1001; /*
+        display: flex; /* Vis hamburger-menu på små skærme */
+    }
+    
+    /* Juster linkene i navigationen */
+    nav.sticky ul {
+        display: none; /* Skjul links som standard */
+        flex-direction: column; /* Ændre til kolonnevisning for dropdown */
+        position: absolute; /* Placer dropdown på toppen */
+        top: 100%; /* Juster placeringen for dropdown */
+        right: 0; /* Juster placeringen til højre */
+        background-color: #fff; /* Baggrundsfarve for dropdown */
+        width: 100%; /* Gør dropdown lige så bred som navigation */
+        padding: 1rem; /* Padding for dropdown */
+        z-index: 1000; /* Sørg for, at dropdown ligger over andet indhold */
+    }
+    
+    /* Når menuen er aktiv */
+    nav.sticky.active ul {
+        display: flex; /* Vis links ved aktiv menu */
+    }
+}
