@@ -245,7 +245,7 @@ footer p {
     /* Navigation styling */
     nav.sticky {
         padding: 0 1rem; /* Mindre padding til navigationen */
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
