@@ -582,7 +582,7 @@ footer p {
 
 #hero .hero-content {
     position: absolute;
-    top: 45%; /* Justér denne værdi for at flytte teksten ned */
+    top: 40%; /* Justér denne værdi for at flytte teksten ned */
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
