@@ -625,61 +625,44 @@ footer p {
     }
 }
 
-    
-/* OM MIG sektion til mobilversion */
-#om {
-    padding: 2rem 1rem; /* Juster padding for mobilvisning */
-    text-align: center; /* Centrér teksten */
-}
+    /*om mig sektion mobilvisning*/
+  #om {
+        text-align: center; /* Centrér indholdet i mobilversionen */
+    }
 
-.om-container {
-    display: flex;
-    flex-direction: column; /* Stak elementer vertikalt */
-    align-items: center; /* Centrér indholdet */
-}
+    .om-container {
+        flex-direction: column; /* Ændr layout til kolonne i stedet for række */
+        align-items: center; /* Sørg for, at indholdet er centreret */
+        text-align: center;
+    }
 
-.om-image {
-    width: 100%; /* Gør billedet responsivt */
-}
+    .om-image {
+        max-width: 100%; /* Billedet skal fylde hele skærmens bredde */
+        margin-bottom: 2rem; /* Tilføj afstand mellem billede og tekst */
+    }
 
-.om-image img {
-    width: 100%; /* Billedet fylder hele bredden */
-    height: auto; /* Behold højde proportional */
-    max-height: 60vh; /* Juster højden efter behov */
-    object-fit: cover; /* Fyld containeren uden at ændre billedforholdet */
-}
+    .om-image img {
+        width: 100%; /* Sørg for, at billedet fylder hele mobilskærmen */
+        height: auto; /* Bevar billedets proportioner */
+        object-fit: cover; /* Skaler billedet uden at ændre forholdene */
+    }
 
-.om-text {
-    text-align: center; /* Centrér teksten under billedet */
-    margin-top: 1rem; /* Tilføj margin for afstand til billedet */
-}
+    .om-text {
+        text-align: center; /* Centrér teksten i mobilversionen */
+        margin-top: 1rem; /* Juster margenen for at skabe plads mellem titel og tekst */
+    }
 
-/* Specifik font til overskriften */
-.om-text .om-title {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5rem; /* Juster skriftstørrelse for mobil */
-    font-weight: 500; /* Juster skriftvægt */
-    color: #959191;
-}
+    .om-text .om-title {
+        font-size: 1.5rem; /* Justér skriftstørrelsen for mobilversionen */
+    }
 
-/* Specifik font til navnet */
-.om-text .om-name {
-    font-size: 28px; /* Juster skriftstørrelse for mobil */
-    font-family: 'Roboto Slab', serif;
-    color: #333;
-    margin: 0;
-}
+    .om-text .om-name {
+        font-size: 1.8rem; /* Justér skriftstørrelsen for mobilversionen */
+    }
 
-/* Specifik font til underteksten */
-.om-text .undertekst {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1rem; /* Juster skriftstørrelse for mobil */
-    line-height: 1.4;
-    color: #959191;
-    margin-top: 1rem; /* Juster margin for afstand */
-}
-
-
+    .om-text .undertekst {
+        font-size: 1rem; /* Tilpas skriftstørrelsen for læsbarhed */
+    }
 
 
 /* Ydelser sektion */
