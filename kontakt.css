@@ -20,14 +20,6 @@ nav.sticky {
     padding: 0 5rem; /* Tilføjer padding til venstre og højre */
 }
 
-/* Navigation container */
-nav.sticky .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; /* Sørg for, at containeren fylder hele bredden */
-}
-
 /* Logo */
 nav.sticky .logo a {
     color: #000000;
@@ -75,22 +67,19 @@ nav.sticky ul li a:hover::after {
     width: 100%;
 }
 
-/* Hamburger Menu */
+/* Hamburger-menu */
 .hamburger {
-    display: none; /* Skjul som standard */
+    display: none; /* Skjuler hamburger-menuen som standard */
     flex-direction: column;
     cursor: pointer;
-    position: absolute; /* Gør positionen absolut */
-    right: 1rem; /* Placerer hamburger-menuen tæt på højre kant */
-    top: 1rem; /* Justerer afstand fra toppen */
-    z-index: 1001; /* Sørg for, at den ligger over andre elementer */
 }
 
 .hamburger div {
-    width: 25px;
+    width: 30px;
     height: 3px;
     background-color: #000;
-    margin: 4px 0; /* Afstand mellem stykkerne */
+    margin: 5px 0;
+    transition: all 0.3s ease;
 }
 
 /* Kontaktoplysninger Sektion */
@@ -104,9 +93,10 @@ nav.sticky ul li a:hover::after {
 
 #kontakt-oplysninger img {
     width: 100%;
-    height: auto; /* Juster højden efter behov */
+    height: 550px; /* Juster højden efter behov */
     object-fit: cover; /* Sørger for at billedet dækker sektionen uden at strække */
     object-position: bottom; /* Justerer billedet til at vise mere af toppen */
+    filter: brightness(40%);
 }
 
 /* Styling for Kontaktoplysninger overskrift */
@@ -254,31 +244,40 @@ footer p {
     /* Navigation styling */
     nav.sticky {
         padding: 0 1rem; /* Mindre padding til navigationen */
-        flex-direction: row; /* Sørg for, at elementerne stadig er i en række */
-        justify-content: space-between; /* Placerer elementerne i hver sin side */
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
-    /* Juster hamburger-menuen */
-    .hamburger {
-        display: flex; /* Vis hamburger-menu på små skærme */
-    }
-    
-    /* Juster linkene i navigationen */
     nav.sticky ul {
-        display: none; /* Skjul links som standard */
-        flex-direction: column; /* Ændre til kolonnevisning for dropdown */
-        position: absolute; /* Placer dropdown på toppen */
-        top: 100%; /* Juster placeringen for dropdown */
-        right: 0; /* Juster placeringen til højre */
-        background-color: #fff; /* Baggrundsfarve for dropdown */
-        width: 100%; /* Gør dropdown lige så bred som navigation */
-        padding: 1rem; /* Padding for dropdown */
-        z-index: 1000; /* Sørg for, at dropdown ligger over andet indhold */
+        display: none; /* Skjuler links som standard */
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%; /* Fuld bredde for menuen */
     }
     
-    /* Når menuen er aktiv */
-    nav.sticky.active ul {
-        display: flex; /* Vis links ved aktiv menu */
+    .hamburger {
+        display: flex; /* Viser hamburger-menuen */
+    }
+
+    .hamburger.active + nav ul {
+        display: flex; /* Viser links når hamburger-menuen er aktiv */
+    }
+    
+    /* Kontaktoplysninger Sektion */
+    #kontakt-oplysninger {
+        text-align: center;
+        margin: 2rem 0; /* Mindre margin til kontaktoplysninger */
+    }
+    
+    /* Justering af input-felter */
+    .input-container input,
+    .input-container textarea {
+        font-size: 0.9rem; /* Mindre skrifttype til mobil */
+    }
+
+    /* Knappen */
+    #kontakt-formular button {
+        padding: 0.5rem 2rem; /* Mindre padding til knappen */
+        font-size: 0.9rem; /* Mindre skrifttype til mobil */
     }
 }
