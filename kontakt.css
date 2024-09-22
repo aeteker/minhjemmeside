@@ -11,12 +11,12 @@ body {
 nav.sticky {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Sørg for, at navigationen ligger over andet indhold */
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff; /* Baggrundsfarve */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 0 5rem; /* Tilføjer padding til venstre og højre */
 }
 
@@ -69,7 +69,7 @@ nav.sticky ul li a:hover::after {
 
 /* Hamburger-menu */
 .hamburger {
-    display: none; /* Skjuler hamburger-menuen som standard */
+    display: auto; /* Skjuler hamburger-menuen som standard */
     flex-direction: column;
     cursor: pointer;
 }
