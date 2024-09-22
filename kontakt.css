@@ -263,7 +263,21 @@ footer p {
         flex-direction: column; /* Skift til kolonnevisning */
         align-items: center; /* Centrér indholdet */
         gap: 1rem; /* Mindre afstand mellem links */
+        padding: 0; /* Fjerner padding for at undgå ekstra plads */
+        margin: 0; /* Fjerner margin for at undgå ekstra plads */
     }
+
+    /* Navigation Link */
+    nav.sticky ul li {
+        width: 100%; /* Gør knapperne så brede som containeren */
+        text-align: center; /* Centrér teksten i knapperne */
+    }
+
+    nav.sticky ul li a {
+        display: block; /* Gør hele knappen klikbar */
+        padding: 0.5rem 0; /* Juster padding for knappen */
+    }
+
 
     /* Kontaktoplysninger Sektion */
     #kontakt-oplysninger {
