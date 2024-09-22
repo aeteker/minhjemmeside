@@ -606,16 +606,17 @@ footer p {
 
 /* OM MIG sektion til mobilversion */
 #om {
+    background: #f4f4f4;
+    padding: 2rem 1rem; /* Juster padding for mobilvisning */
     display: flex;
     flex-direction: column; /* Stak elementer vertikalt */
     align-items: center; /* Centrér indholdet */
-    background: #f4f4f4;
-    padding: 2rem 1rem; /* Juster padding for mobilvisning */
 }
 
 .om-container {
-    width: 100%; /* Sikre at containeren fylder hele bredden */
+    display: block; /* Skift til block for at få elementer til at stable sig */
     padding: 1rem 0;
+    width: 100%; /* Sørg for, at containeren fylder hele bredden */
 }
 
 .om-image {
@@ -626,8 +627,8 @@ footer p {
 .om-image img {
     width: 100%; /* Billedet fylder hele bredden */
     height: auto; /* Behold højden proportional */
+    max-height: 60vh; /* Begræns højden til en rimelig størrelse */
     object-fit: cover; /* Fyld containeren uden at ændre billedforholdet */
-    max-height: 60vh; /* Begræns højden til 60% af viewport-højden */
     filter: grayscale(80%); /* Behold effekten */
 }
 
@@ -668,7 +669,6 @@ footer p {
     text-align: center; /* Centrér ikoner og links */
     margin-top: 1rem; /* Juster margin for afstand */
 }
-
 
 
 /* Ydelser sektion */
