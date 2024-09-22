@@ -23,8 +23,9 @@ nav.sticky {
 /* Navigation container */
 nav.sticky .nav-container {
     display: flex;
+    justify-content: space-between; /* Fordel plads mellem logo og links */
     align-items: center;
-    width: 100%; /* Sørg for, at containeren fylder hele bredden */
+    width: 100%;
 }
 
 /* Logo */
@@ -34,7 +35,6 @@ nav.sticky .logo a {
     font-size: 2rem;
     font-family: 'Roboto Slab';
     font-weight: normal;
-    margin-right: auto; /* Sørger for at holde logoet til venstre */
 
 }
 
@@ -42,8 +42,11 @@ nav.sticky .logo a {
 nav.sticky ul {
     list-style: none;
     display: flex;
-    gap: 2rem; /* Øg afstanden mellem links */
+    gap: 2rem;
+    flex-grow: 1; /* Giver ul mulighed for at vokse og fylde pladsen */
+    justify-content: flex-end; /* Placerer links til højre */
 }
+
 
 nav.sticky ul li a {
     font-family: 'Roboto Slab';
