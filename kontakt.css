@@ -264,46 +264,5 @@ footer p {
         align-items: center; /* Centrér indholdet */
         gap: 1rem; /* Mindre afstand mellem links */
     }
-    /* Kontaktoplysninger Sektion */
-    #kontakt-oplysninger {
-        margin: 2rem 0; /* Mindre margin på mobilen */
-        position: relative; /* Relativ positionering */
-        text-align: center; /* Centrerer tekst indeni */
-    }
 
-    #kontakt-oplysninger img {
-        width: 100%; /* Billedet fylder hele bredden */
-        height: auto; /* Automatisk højde */
-        object-fit: cover; /* Dækker sektionen */
-    }
-
-    /* Styling for Kontaktoplysninger overskrift */
-    .kontaktoverskrift {
-        position: absolute; /* Hold teksten ovenpå billedet */
-        top: 20%; /* Justér denne værdi efter behov */
-        left: 50%; /* Centrér teksten */
-        transform: translate(-50%, -50%); /* Centrer teksten */
-        color: #ffffff; /* Hvid farve for teksten */
-        font-family: 'Roboto Slab';
-        font-size: 1.5rem; /* Juster størrelse om nødvendigt */
-        text-align: center; /* Centrér teksten */
-        letter-spacing: 0.1rem;
-        z-index: 10; /* Sørg for, at teksten er oven på billedet */
-    }
-
-    /* Styling for kontaktoplysninger */
-    .oplysninger {
-        position: absolute; /* Hold dette absolut for overlap */
-        top: 75%; /* Justér denne værdi for at placere teksten korrekt */
-        left: 50%; /* Centrér teksten */
-        transform: translate(-50%, -50%); /* Centrer teksten */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centrér indholdet */
-        color: #ffffff;
-        font-family: 'Roboto Slab', serif;
-        font-size: 1rem; /* Mindre skriftstørrelse */
-        gap: 0.5rem; /* Mindre mellemrum mellem elementerne */
-        z-index: 10; /* Sørg for, at teksten er oven på billedet */
-    }
 }
