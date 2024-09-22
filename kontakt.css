@@ -264,29 +264,52 @@ footer p {
         align-items: center; /* Centrér indholdet */
         gap: 1rem; /* Mindre afstand mellem links */
     }
+    /* Kontaktoplysninger Sektion */
+    #kontakt-oplysninger {
+        text-align: center; /* Centrér teksten */
+    }
 
-    /* Kontaktoplysninger */
+    /* Billede i Kontaktoplysninger sektion */
+    #kontakt-oplysninger img {
+        height: auto; /* Juster billedhøjde automatisk */
+        width: 100%; /* Billede fylder hele bredden */
+        object-fit: cover; /* Beholder billedets proportioner */
+    }
+
+    /* Styling for Kontaktoplysninger overskrift */
+    .kontaktoverskrift {
+        font-size: 1.5rem; /* Mindre skriftstørrelse */
+        top: 30%; /* Juster placeringen */
+        left: 50%; /* Centrer horisontalt */
+        transform: translate(-50%, -50%); /* Justér for at centrere */
+    }
+
+    /* Styling for kontaktoplysninger */
     .oplysninger {
-        left: 5%; /* Juster placeringen til mobilvisning */
         font-size: 1rem; /* Mindre skriftstørrelse */
-    }
-
-    .kontakt-info a {
-        gap: 1rem; /* Mindre afstand mellem ikon og tekst */
-    }
-
-    .kontakt-info a i {
-        font-size: 2rem; /* Mindre ikonstørrelse */
+        top: 60%; /* Juster placeringen */
+        left: 50%; /* Centrer horisontalt */
+        transform: translate(-50%, -50%); /* Justér for at centrere */
     }
 
     /* Kontaktformular */
     #kontakt-formular {
-        padding: 1.5rem;
-        max-width: 90vw; /* Justeret bredde til mobilvisning */
+        padding: 1rem; /* Juster padding */
+        margin: 1rem auto; /* Mindre margin */
+        max-width: 90%; /* Bredde tilpasset til mobilen */
     }
 
-    /* Footer */
-    footer {
-        font-size: 0.8rem; /* Mindre skriftstørrelse */
+    #kontakt-formular h1 {
+        font-size: 1.5rem; /* Mindre skriftstørrelse */
     }
+
+    .input-container input,
+    .input-container textarea {
+        font-size: 0.9rem; /* Mindre skriftstørrelse */
+    }
+
+    #kontakt-formular button {
+        padding: 0.5rem 2rem; /* Juster padding */
+    }
+
 }
