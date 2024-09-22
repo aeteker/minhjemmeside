@@ -737,3 +737,23 @@ footer p {
     }
 }
 
+/* Medieforespørgsel for større skærme */
+@media (min-width: 1440px) {
+    #hero h1 {
+        font-size: 3rem; /* Juster efter behov */
+    }
+
+    #hero h2 {
+        font-size: 2.5rem; /* Juster efter behov */
+    }
+
+    #om {
+        flex-direction: row; /* Billede ved siden af tekst */
+        justify-content: space-between; /* Mellemrum mellem billede og tekst */
+    }
+
+    #ydelser {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 kolonner for store skærme */
+    }
+}
