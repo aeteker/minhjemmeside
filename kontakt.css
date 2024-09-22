@@ -276,41 +276,41 @@ footer p {
     }
 
     /* Juster billedet på kontaktsiden */
-    .kontakt-container img {
-        width: 80%; /* Formindsk billedet */
-        height: auto; /* Bevar billedets proportioner */
+    #kontakt-oplysninger img {
+        width: 80%;
+        height: auto;
         display: block;
-        margin: 0 auto; /* Centrér billedet */
+        margin: 0 auto;
     }
 
     /* Juster tekst under kontaktoplysninger */
-    .kontakt-oplysninger {
-        text-align: center; /* Centrér kontaktoplysningerne */
-        font-size: 1rem; /* Juster skriftstørrelse */
-        padding: 1rem 0; /* Tilføj lidt afstand mellem teksten */
+    #kontakt-oplysninger {
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem 0;
     }
 
-    .kontakt-oplysninger p {
-        margin-bottom: 0.5rem; /* Lidt mindre afstand mellem afsnit */
+    #kontakt-oplysninger p {
+        margin-bottom: 0.5rem;
     }
 
-    /* Juster eventuelle andre kontaktfelter */
-    .kontakt-formular {
-        margin-top: 2rem; /* Tilføj mere afstand til toppen, hvis nødvendigt */
-        text-align: center; /* Centrér indholdet */
+    /* Juster kontaktformular */
+    #kontakt-formular {
+        margin-top: 2rem;
+        text-align: center;
     }
 
-    .kontakt-formular input, .kontakt-formular textarea {
-        width: 90%; /* Sørg for, at felterne fylder næsten hele bredden */
-        margin: 0 auto; /* Centrér inputfelterne */
-        padding: 0.5rem; /* Tilføj lidt padding til felterne */
+    #kontakt-formular input,
+    #kontakt-formular textarea {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5rem;
     }
 
-    /* Juster knapens design, hvis nødvendigt */
-    .kontakt-formular button {
-        width: auto; /* Sørg for, at knappen ikke fylder hele bredden */
-        padding: 0.7rem 2rem; /* Juster størrelsen på knappen */
-        margin-top: 1rem; /* Tilføj lidt afstand til toppen */
+    #kontakt-formular button {
+        width: auto;
+        padding: 0.7rem 2rem;
+        margin-top: 1rem;
     }
 }
 
