@@ -11,13 +11,21 @@ body {
 nav.sticky {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* Sørg for, at navigationen ligger over andet indhold */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Baggrundsfarve */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
     padding: 0 5rem; /* Tilføjer padding til venstre og højre */
+}
+
+/* Navigation container */
+nav.sticky .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Sørg for, at containeren fylder hele bredden */
 }
 
 /* Logo */
@@ -67,22 +75,6 @@ nav.sticky ul li a:hover::after {
     width: 100%;
 }
 
-/* Hamburger-menu */
-.hamburger {
-    display: none; /* Skjuler hamburger-menuen som standard */
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: auto; /* Sørg for, at hamburger-menuen altid er til højre */
-}
-
-.hamburger div {
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px 0;
-    transition: all 0.3s ease;
-}
-
 /* Kontaktoplysninger Sektion */
 #kontakt-oplysninger {
     position: relative;
@@ -100,13 +92,14 @@ nav.sticky ul li a:hover::after {
     filter: brightness(40%);
 }
 
+
 /* Styling for Kontaktoplysninger overskrift */
 .kontaktoverskrift {
     position: absolute;
     top: 45%; /* Justeret til ca. midten af billedet */
     left: 10%; /* Justeret til venstre side */
     color: #ffffff;
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto slab';
     font-size: 2rem;
     font-weight: lighter;
     margin: 0;
@@ -167,7 +160,7 @@ nav.sticky ul li a:hover::after {
     margin: 0 0 4rem 0; /* Tilføj margin nedenfor overskriften */
     text-align: center;
     color: #333;
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto slab';
     font-weight: lighter;
 }
 
@@ -240,59 +233,46 @@ footer p {
     line-height: 1.5;
 }
 
-/* For mindre skærme */
+/* Medieforespørgsel for mobilvisning */
 @media (max-width: 768px) {
-    /* Navigation styling */
+    /* Navigation Styling */
     nav.sticky {
-        padding: 0 1rem; /* Mindre padding til navigationen */
-        flex-direction: row;
-        align-items: flex-start;
+        display: flex;
+        flex-direction: column; /* Skift til kolonnevisning */
+        align-items: center; /* Centrér indholdet */
+        padding: 1rem 0; /* Tilføj lidt padding */
     }
 
+    /* Navigation container */
+    nav.sticky .nav-container {
+        display: flex;
+        flex-direction: column; /* Skift til kolonnevisning */
+        align-items: center; /* Centrér indholdet */
+        width: 100%; /* Sørg for, at containeren fylder hele bredden */
+    }
+
+    /* Logo */
+    nav.sticky .logo a {
+        font-size: 2rem; /* Størrelse kan justeres, hvis nødvendigt */
+        text-align: center; /* Centrér teksten */
+    }
+
+    /* Navigation Links */
     nav.sticky ul {
-        display: none; /* Skjuler links som standard */
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%; /* Fuld bredde for menuen */
+        list-style: none;
+        display: flex;
+        flex-direction: column; /* Skift til kolonnevisning */
+        align-items: center; /* Centrér indholdet */
+        padding: 0; /* Fjern standard padding */
+        margin: 0; /* Fjern standard margin */
     }
 
-    .hamburger {
-        display: flex; /* Viser hamburger-menuen */
+    nav.sticky ul li {
+        margin-top: 0.5rem; /* Tilføj lidt afstand mellem links */
     }
 
-    .hamburger.active + nav ul {
-        display: flex; /* Viser links når hamburger-menuen er aktiv */
-    }
-
-    /* Kontaktoplysninger Sektion */
-    #kontakt-oplysninger {
-        text-align: center;
-        margin: 2rem 0;
-    }
-
-    #kontakt-oplysninger .kontaktoverskrift {
-        font-size: 1.5rem;
-        top: 30%; /* Justeret for mobil */
-    }
-
-    #kontakt-oplysninger .oplysninger {
-        font-size: 1rem;
-        top: 60%; /* Justeret for mobil */
-    }
-
-    /* Kontakt Sektion */
-    #kontakt-formular {
-        padding: 1rem; /* Mindre padding til mobil */
-        margin: 2rem auto; /* Mindre margin til mobil */
-        max-width: 100%; /* Fuld bredde til mobil */
-    }
-
-    #kontakt-formular h1 {
-        font-size: 1.5rem; /* Mindre overskrift til mobil */
-    }
-
-    /* Knappen */
-    #kontakt-formular button {
-        padding: 0.5rem 2rem; /* Mindre padding til knappen på mobil */
+    nav.sticky ul li a {
+        text-align: center; /* Centrér teksten */
     }
 }
+
