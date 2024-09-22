@@ -276,15 +276,12 @@ footer p {
     }
 
     /* Juster billedet på kontaktsiden */
-#kontakt-oplysninger img {
-    width: 100vw; /* Fylder hele bredden af skærmen */
-    height: auto; /* Sørger for, at billedet bevarer sin proportion */
-    max-height: 550px; /* Beholder en fornuftig maksimal højde */
-    object-fit: cover; /* Sørger for, at billedet dækker hele området uden at blive forvrænget */
-    display: block;
-    margin: 0 auto;
-}
-
+    #kontakt-oplysninger img {
+        width: 100%; /* Gør billedet fuldt bredt på mobil */
+        height: 400px; /* Justér denne værdi efter behov */
+        object-fit: cover; /* Beholder billedets proportioner */
+        object-position: center; /* Centrer billedet */
+    }
 
     /* Juster tekst under kontaktoplysninger */
     #kontakt-oplysninger {
@@ -314,6 +311,18 @@ footer p {
         width: auto;
         padding: 0.7rem 2rem;
         margin-top: 1rem;
+    }
+
+    /* Justér tekststørrelse for kontaktoverskriften på billedet */
+    .kontaktoverskrift {
+        font-size: 1.2rem; /* Mindre skriftstørrelse for mobil */
+        top: 40%; /* Flyt teksten lidt længere op, hvis nødvendigt */
+    }
+
+    /* Justér tekststørrelse for oplysninger under overskriften */
+    .oplysninger {
+        font-size: 0.9rem; /* Mindre tekststørrelse for mobil */
+        top: 60%; /* Justér placering efter behov */
     }
 }
 
