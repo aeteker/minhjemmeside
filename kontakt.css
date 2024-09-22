@@ -265,11 +265,10 @@ footer p {
         gap: 1rem; /* Mindre afstand mellem links */
     }
 
-        /* Kontaktoplysninger Sektion */
-    #kontakt-oplysninger {
+ #kontakt-oplysninger {
         margin: 2rem 0; /* Mindre margin på mobilen */
         position: relative;
-        text-align: center;
+        text-align: left; /* Juster tekst til venstre */
     }
 
     #kontakt-oplysninger img {
@@ -283,15 +282,15 @@ footer p {
     /* Styling for Kontaktoplysninger overskrift */
     .kontaktoverskrift {
         position: absolute;
-        top: 30%; /* Justeret til toppen af billedet */
-        left: 20%; /* Centrér teksten */
-        transform: translate(-50%, -50%); /* Centrer teksten */
+        top: 20%; /* Justeret til toppen af billedet */
+        left: 10%; /* Justeret til venstre side */
+        transform: translateY(-50%); /* Vertikal centrering */
         color: #ffffff;
         font-family: 'Roboto Slab';
         font-size: 1.5rem; /* Mindre skriftstørrelse til mobil */
         font-weight: lighter;
         margin: 0;
-        text-align: center; /* Centrér teksten */
+        text-align: left; /* Venstrestillet tekst */
         letter-spacing: 0.1rem;
         z-index: 10; /* Sørg for, at teksten er oven på billedet */
     }
@@ -300,13 +299,13 @@ footer p {
     .oplysninger {
         position: absolute;
         top: 75%; /* Justeret til en passende position */
-        left: 20%; /* Centrér teksten */
-        transform: translate(-50%, -50%); /* Centrer teksten */
+        left: 10%; /* Justeret til venstre side */
+        transform: translateY(-50%); /* Vertikal centrering */
         display: flex;
         flex-direction: column;
         gap: 0.5rem; /* Mindre mellemrum mellem elementerne */
-        justify-content: center; /* Centrér indholdet */
-        align-items: center; /* Centrér indholdet */
+        justify-content: flex-start; /* Justerer indhold til venstre */
+        align-items: flex-start; /* Justerer indhold til venstre */
         color: #ffffff;
         font-family: 'Roboto Slab', serif;
         font-size: 1rem; /* Mindre skriftstørrelse til mobil */
