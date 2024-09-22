@@ -283,8 +283,8 @@ footer p {
     /* Styling for Kontaktoplysninger overskrift */
     .kontaktoverskrift {
         position: absolute;
-        top: 20%; /* Justeret til toppen af billedet */
-        left: 50%; /* Centrér teksten */
+        top: 30%; /* Justeret til toppen af billedet */
+        left: 20%; /* Centrér teksten */
         transform: translate(-50%, -50%); /* Centrer teksten */
         color: #ffffff;
         font-family: 'Roboto Slab';
@@ -300,7 +300,7 @@ footer p {
     .oplysninger {
         position: absolute;
         top: 75%; /* Justeret til en passende position */
-        left: 50%; /* Centrér teksten */
+        left: 20%; /* Centrér teksten */
         transform: translate(-50%, -50%); /* Centrer teksten */
         display: flex;
         flex-direction: column;
