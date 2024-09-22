@@ -86,7 +86,7 @@ nav.sticky ul li a:hover::after {
 
 #kontakt-oplysninger img {
     width: 100%;
-    height: 550px; /* Juster højden efter behov */
+    height: auto; /* Juster højden efter behov */
     object-fit: cover; /* Sørger for at billedet dækker sektionen uden at strække */
     object-position: bottom; /* Justerer billedet til at vise mere af toppen */
     filter: brightness(40%);
