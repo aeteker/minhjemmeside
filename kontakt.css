@@ -23,7 +23,6 @@ nav.sticky {
 /* Navigation container */
 nav.sticky .nav-container {
     display: flex;
-    justify-content: flex-end; /* Placerer elementerne til højre */
     align-items: center;
     width: 100%; /* Sørg for, at containeren fylder hele bredden */
 }
@@ -51,7 +50,7 @@ nav.sticky ul li a {
     color: #000000;
     text-decoration: none;
     font-weight: normal;
-    position: relative;
+    position: right;
     padding: 0.5rem 0;
     transition: color 0.3s ease, transform 0.3s ease;
 }
