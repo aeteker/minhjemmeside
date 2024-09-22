@@ -234,48 +234,34 @@ footer p {
 
 /* Medieforespørgsel for mobilvisning */
 @media (max-width: 768px) {
-    /* Navigation Styling */
-    nav.sticky {
+    .nav-container {
         display: flex;
-        flex-direction: column; /* Skift til kolonnevisning */
-        align-items: center; /* Centrér indholdet */
-        padding: 1rem 0; /* Tilføj lidt padding */
+        flex-direction: column;
+        align-items: center; /* Centrér elementerne */
+    }
+    
+    .nav-container .logo {
+        font-size: 16px; /* Juster logo-størrelsen for mobil */
     }
 
-    /* Navigation container */
-    nav.sticky .nav-container {
-        display: flex;
-        flex-direction: column; /* Skift til kolonnevisning */
-        align-items: center; /* Centrér indholdet */
-        width: 100%; /* Sørg for, at containeren fylder hele bredden */
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
-    /* Logo */
-    nav.sticky .logo a {
-        font-size: 2rem; /* Størrelse kan justeres, hvis nødvendigt */
+    nav ul li {
+        margin-bottom: 10px; /* Mellemrum mellem navigationselementer */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Juster skriftstørrelse for links */
         text-align: center; /* Centrér teksten */
     }
 
-    /* Navigation Links */
-    nav.sticky ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column; /* Skift til kolonnevisning */
-        align-items: center; /* Centrér indholdet */
-        gap: 1rem; /* Mindre afstand mellem links */
-        padding: 0; /* Fjerner padding for at undgå ekstra plads */
-        margin: 0; /* Fjerner margin for at undgå ekstra plads */
-    }
-
-    /* Navigation Link */
-    nav.sticky ul li {
-        width: 100%; /* Gør knapperne så brede som containeren */
-        text-align: center; /* Centrér teksten i knapperne */
-    }
-
-    nav.sticky ul li a {
-        display: block; /* Gør hele knappen klikbar */
-        padding: 0.5rem 0; /* Juster padding for knappen */
+    /* Juster størrelsen på knapper i navigationen */
+    .nav-container .nav-button {
+        font-size: 14px; /* Juster skriftstørrelsen for knapper */
     }
 
 
