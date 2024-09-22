@@ -570,7 +570,7 @@ footer p {
 /* Hero sektion til mobilversionen */
 #hero {
     background: url('vvsventilation.jpg') no-repeat center center;
-    height: 75vh; /* Juster højden */
+    height: 100vh; /* Juster højden */
     display: flex;
     justify-content: center; /* Centrér horisontalt */
     align-items: center; /* Centrér vertikalt */
