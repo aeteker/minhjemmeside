@@ -275,21 +275,28 @@ footer p {
 
     /* Styling for Kontaktoplysninger overskrift */
     .kontaktoverskrift {
-        position: relative; /* Fjern absolut positionering */
-        top: auto; /* Tilpas top-position */
-        left: auto; /* Tilpas venstre position */
-        transform: none; /* Fjern transform */
-        font-size: 1.5rem; /* Mindre skriftstørrelse til mobilen */
+        position: absolute; /* Hold det absolutte for overlap med billedet */
+        top: 30%; /* Juster denne værdi for at placere teksten korrekt */
+        left: 50%; /* Centrer teksten horisontalt */
+        transform: translate(-50%, -50%); /* Centrer teksten i forhold til sin egen størrelse */
+        color: #ffffff; /* Sørg for at teksten er hvid */
+        font-family: 'Roboto Slab';
+        font-size: 1.5rem; /* Juster størrelsen om nødvendigt */
         text-align: center; /* Centrér teksten */
+        letter-spacing: 0.1rem; /* Juster mellemrum mellem bogstaver */
     }
 
     /* Styling for kontaktoplysninger */
     .oplysninger {
-        position: relative; /* Fjern absolut positionering */
-        top: auto; /* Tilpas top-position */
-        left: auto; /* Tilpas venstre position */
-        transform: none; /* Fjern transform */
+        position: absolute; /* Hold det absolutte for overlap med billedet */
+        top: 80%; /* Juster denne værdi for at placere teksten korrekt */
+        left: 50%; /* Centrer teksten horisontalt */
+        transform: translate(-50%, -50%); /* Centrer teksten i forhold til sin egen størrelse */
+        display: flex;
+        flex-direction: column;
         align-items: center; /* Centrér indholdet */
+        color: #ffffff;
+        font-family: 'Roboto Slab', serif;
         font-size: 1rem; /* Mindre skriftstørrelse */
         gap: 0.5rem; /* Mindre mellemrum mellem elementerne */
     }
