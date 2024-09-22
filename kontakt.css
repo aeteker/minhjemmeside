@@ -267,16 +267,19 @@ footer p {
     /* Kontaktoplysninger Sektion */
     #kontakt-oplysninger {
         margin: 2rem 0; /* Mindre margin på mobilen */
+        position: relative; /* Sørg for, at den er relativ for absolutte børn */
     }
 
     #kontakt-oplysninger img {
+        width: 100%; /* Behold billedet i fuld bredde */
         height: auto; /* Automatisk højde for billeder på mobilen */
+        object-fit: cover; /* Sørger for at billedet dækker sektionen */
     }
 
     /* Styling for Kontaktoplysninger overskrift */
     .kontaktoverskrift {
         position: absolute; /* Hold det absolutte for overlap med billedet */
-        top: 30%; /* Juster denne værdi for at placere teksten korrekt */
+        top: 20%; /* Juster denne værdi for at placere teksten korrekt */
         left: 50%; /* Centrer teksten horisontalt */
         transform: translate(-50%, -50%); /* Centrer teksten i forhold til sin egen størrelse */
         color: #ffffff; /* Sørg for at teksten er hvid */
@@ -284,12 +287,13 @@ footer p {
         font-size: 1.5rem; /* Juster størrelsen om nødvendigt */
         text-align: center; /* Centrér teksten */
         letter-spacing: 0.1rem; /* Juster mellemrum mellem bogstaver */
+        z-index: 10; /* Sørg for, at teksten er over billedet */
     }
 
     /* Styling for kontaktoplysninger */
     .oplysninger {
         position: absolute; /* Hold det absolutte for overlap med billedet */
-        top: 80%; /* Juster denne værdi for at placere teksten korrekt */
+        top: 75%; /* Juster denne værdi for at placere teksten korrekt */
         left: 50%; /* Centrer teksten horisontalt */
         transform: translate(-50%, -50%); /* Centrer teksten i forhold til sin egen størrelse */
         display: flex;
@@ -299,6 +303,6 @@ footer p {
         font-family: 'Roboto Slab', serif;
         font-size: 1rem; /* Mindre skriftstørrelse */
         gap: 0.5rem; /* Mindre mellemrum mellem elementerne */
+        z-index: 10; /* Sørg for, at teksten er over billedet */
     }
-
 }
