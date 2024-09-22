@@ -566,74 +566,30 @@ footer p {
     .nav-container .nav-button {
         font-size: 14px; /* Juster skriftstørrelsen for knapper */
     }
-
-/* Hero sektion til mobilversionen */
-#hero {
-    background: url('vvsventilation.jpg') no-repeat center center;
-    height: 100vh; /* Juster højden */
-    display: flex;
-    justify-content: center; /* Centrér horisontalt */
-    align-items: flex-start; /* Start med at justere vertikalt */
-    text-align: center;
-    margin-top: 1rem;
-    background-size: contain; /* Sørg for, at billedet ikke forstørres */
-    position: relative; /* Sørg for, at det kan fungere med .hero-content */
-}
-
-#hero .hero-content {
-    position: absolute;
-    top: 40%; /* Justér denne værdi for at flytte teksten ned */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-}
-
-
-#hero .hero-content h1 {
-    font-size: 0.8rem !important;
-    color: #000 !important;
-    margin: 0 !important;
-    letter-spacing: 0.1rem;
-}
-
-#hero .hero-content h2 {
-    font-size: 1rem !important;
-    color: #000 !important;
-    margin: 0 !important;
-    letter-spacing: 0.1rem;
-}
-
-
-/* OM MIG sektion til mobilversion */
+    
+ /* OM MIG sektion til mobilversion */
 #om {
-    background: #f4f4f4;
-    padding: 2rem 0; /* Juster padding for mobilvisning */
     display: flex;
     flex-direction: column; /* Stak elementer vertikalt */
     align-items: center; /* Centrér indholdet */
-}
-
-.om-container {
-    width: 100%; /* Container fylder hele bredden */
+    padding: 2rem 1rem; /* Tilføj padding for afstand */
 }
 
 .om-image {
     width: 100%; /* Gør billedet responsivt */
-    display: flex; /* Flexbox for centrering */
-    justify-content: center; /* Centrér indholdet */
+    overflow: hidden;
 }
 
 .om-image img {
     width: 100%; /* Billedet fylder hele bredden */
     height: auto; /* Behold højden proportional */
-    max-height: 60vh; /* Juster maksimal højde */
     object-fit: cover; /* Fyld containeren uden at ændre billedforholdet */
     filter: grayscale(80%); /* Behold effekten */
 }
 
 .om-text {
     text-align: center; /* Centrér teksten under billedet */
-    margin-top: 1rem; /* Afstand til billedet */
+    margin-top: 1rem; /* Tilføj margin for afstand til billedet */
 }
 
 /* Specifik font til overskriften */
@@ -642,6 +598,7 @@ footer p {
     font-size: 1.5rem; /* Juster skriftstørrelse for mobil */
     font-weight: 500; /* Juster skriftvægt */
     color: #959191;
+    margin-top: 1rem; /* Tilføj margin over overskriften */
 }
 
 /* Specifik font til navnet */
@@ -650,6 +607,8 @@ footer p {
     font-family: 'Roboto Slab', serif;
     color: #333;
     margin: 0;
+    padding: 0;
+    line-height: 1;
 }
 
 /* Specifik font til underteksten */
@@ -658,14 +617,15 @@ footer p {
     font-size: 1rem; /* Juster skriftstørrelse for mobil */
     line-height: 1.4;
     color: #959191;
-    margin-top: 1rem; /* Afstand */
+    margin-top: 1rem; /* Juster margin for afstand */
 }
 
 /* LinkedIn og CV ikoner */
 .linkedin-container, .cv-container {
     text-align: center; /* Centrér ikoner og links */
-    margin-top: 1rem; /* Afstand */
+    margin-top: 1rem; /* Juster margin for afstand */
 }
+
 
 
 /* Ydelser sektion */
