@@ -274,5 +274,43 @@ footer p {
     nav.sticky ul li a {
         text-align: center; /* Centrér teksten */
     }
+
+    /* Juster billedet på kontaktsiden */
+    .kontakt-container img {
+        width: 80%; /* Formindsk billedet */
+        height: auto; /* Bevar billedets proportioner */
+        display: block;
+        margin: 0 auto; /* Centrér billedet */
+    }
+
+    /* Juster tekst under kontaktoplysninger */
+    .kontakt-oplysninger {
+        text-align: center; /* Centrér kontaktoplysningerne */
+        font-size: 1rem; /* Juster skriftstørrelse */
+        padding: 1rem 0; /* Tilføj lidt afstand mellem teksten */
+    }
+
+    .kontakt-oplysninger p {
+        margin-bottom: 0.5rem; /* Lidt mindre afstand mellem afsnit */
+    }
+
+    /* Juster eventuelle andre kontaktfelter */
+    .kontakt-formular {
+        margin-top: 2rem; /* Tilføj mere afstand til toppen, hvis nødvendigt */
+        text-align: center; /* Centrér indholdet */
+    }
+
+    .kontakt-formular input, .kontakt-formular textarea {
+        width: 90%; /* Sørg for, at felterne fylder næsten hele bredden */
+        margin: 0 auto; /* Centrér inputfelterne */
+        padding: 0.5rem; /* Tilføj lidt padding til felterne */
+    }
+
+    /* Juster knapens design, hvis nødvendigt */
+    .kontakt-formular button {
+        width: auto; /* Sørg for, at knappen ikke fylder hele bredden */
+        padding: 0.7rem 2rem; /* Juster størrelsen på knappen */
+        margin-top: 1rem; /* Tilføj lidt afstand til toppen */
+    }
 }
 
