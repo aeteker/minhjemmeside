@@ -626,12 +626,6 @@ footer p {
 }
 
     
- /* OM MIG sektion til mobilversion */
-#om {
-    display: flex;
-    flex-direction: column; /* Stak elementer vertikalt */
-    align-items: center; /* Centrér indholdet */
-    padding: 2rem 1rem; /* Tilføj padding for afstand */
 /* OM MIG sektion til mobilversion */
 #om {
     padding: 2rem 1rem; /* Juster padding for mobilvisning */
@@ -684,6 +678,7 @@ footer p {
     color: #959191;
     margin-top: 1rem; /* Juster margin for afstand */
 }
+
 
 
 
