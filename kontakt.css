@@ -47,7 +47,7 @@ nav.sticky ul {
 }
 
 nav.sticky ul li {
-    position: relative; /* Tilføjet for at positionere ::after korrekt */
+    position: relative; /* Positionerer ::after korrekt */
 }
 
 nav.sticky ul li a {
@@ -57,7 +57,7 @@ nav.sticky ul li a {
     font-weight: normal;
     padding: 0.5rem 0;
     transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block; /* Sikrer, at effekten dækker hele linket */
+    display: block; /* Ændret til block for at dække hele området */
 }
 
 /* Hover-effekter på navigation */
@@ -81,12 +81,6 @@ nav.sticky ul li a:hover {
 nav.sticky ul li a:hover::after {
     width: 100%; /* Stræk linjen under teksten ved hover */
 }
-
-/* Ny tilføjelse for at sikre korrekt placering */
-nav.sticky ul li a {
-    position: relative; /* Tilføjet for at gøre ::after relative til linket */
-}
-
 
 
 /* Kontaktoplysninger Sektion */
