@@ -276,12 +276,15 @@ footer p {
     }
 
     /* Juster billedet på kontaktsiden */
-    #kontakt-oplysninger img {
-        width: 80%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
+#kontakt-oplysninger img {
+    width: 100vw; /* Fylder hele bredden af skærmen */
+    height: auto; /* Sørger for, at billedet bevarer sin proportion */
+    max-height: 550px; /* Beholder en fornuftig maksimal højde */
+    object-fit: cover; /* Sørger for, at billedet dækker hele området uden at blive forvrænget */
+    display: block;
+    margin: 0 auto;
+}
+
 
     /* Juster tekst under kontaktoplysninger */
     #kontakt-oplysninger {
