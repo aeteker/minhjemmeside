@@ -92,7 +92,6 @@ nav.sticky ul li a:hover::after {
     filter: brightness(40%);
 }
 
-
 /* Styling for Kontaktoplysninger overskrift */
 .kontaktoverskrift {
     position: absolute;
@@ -263,66 +262,31 @@ footer p {
         display: flex;
         flex-direction: column; /* Skift til kolonnevisning */
         align-items: center; /* Centrér indholdet */
-        padding: 0; /* Fjern standard padding */
-        margin: 0; /* Fjern standard margin */
+        gap: 1rem; /* Mindre afstand mellem links */
     }
 
-    nav.sticky ul li {
-        margin-top: 0.5rem; /* Tilføj lidt afstand mellem links */
-    }
-
-    nav.sticky ul li a {
-        text-align: center; /* Centrér teksten */
-    }
-
-    /* Juster billedet på kontaktsiden */
-    #kontakt-oplysninger img {
-        width: 100%; /* Gør billedet fuldt bredt på mobil */
-        height: 400px; /* Justér denne værdi efter behov */
-        object-fit: cover; /* Beholder billedets proportioner */
-        object-position: center; /* Centrer billedet */
-    }
-
-    /* Juster tekst under kontaktoplysninger */
-    #kontakt-oplysninger {
-        text-align: center;
-        font-size: 1rem;
-        padding: 1rem 0;
-    }
-
-    #kontakt-oplysninger p {
-        margin-bottom: 0.5rem;
-    }
-
-    /* Juster kontaktformular */
-    #kontakt-formular {
-        margin-top: 2rem;
-        text-align: center;
-    }
-
-    #kontakt-formular input,
-    #kontakt-formular textarea {
-        width: 90%;
-        margin: 0 auto;
-        padding: 0.5rem;
-    }
-
-    #kontakt-formular button {
-        width: auto;
-        padding: 0.7rem 2rem;
-        margin-top: 1rem;
-    }
-
-    /* Justér tekststørrelse for kontaktoverskriften på billedet */
-    .kontaktoverskrift {
-        font-size: 1.2rem; /* Mindre skriftstørrelse for mobil */
-        top: 40%; /* Flyt teksten lidt længere op, hvis nødvendigt */
-    }
-
-    /* Justér tekststørrelse for oplysninger under overskriften */
+    /* Kontaktoplysninger */
     .oplysninger {
-        font-size: 0.9rem; /* Mindre tekststørrelse for mobil */
-        top: 60%; /* Justér placering efter behov */
+        left: 5%; /* Juster placeringen til mobilvisning */
+        font-size: 1rem; /* Mindre skriftstørrelse */
+    }
+
+    .kontakt-info a {
+        gap: 1rem; /* Mindre afstand mellem ikon og tekst */
+    }
+
+    .kontakt-info a i {
+        font-size: 2rem; /* Mindre ikonstørrelse */
+    }
+
+    /* Kontaktformular */
+    #kontakt-formular {
+        padding: 1.5rem;
+        max-width: 90vw; /* Justeret bredde til mobilvisning */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem; /* Mindre skriftstørrelse */
     }
 }
-
