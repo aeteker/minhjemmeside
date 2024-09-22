@@ -604,17 +604,26 @@ footer p {
 }
 
 
-
-
-
     /* Velkommen sektion */
-    #velkommen h2 {
-        font-size: 20px; /* Juster skriftstørrelse for overskrift */
-    }
+#velkommen {
+    display: flex;
+    justify-content: center; /* Centrér indholdet horisontalt */
+    align-items: center; /* Centrér indholdet vertikalt */
+    flex-direction: column; /* Placer indholdet i en kolonne */
+    text-align: center; /* Centrér teksten */
+    padding: 20px; /* Tilføj noget padding */
+}
 
-    #velkommen p {
-        font-size: 14px; /* Juster skriftstørrelse for tekst */
-    }
+#velkommen h2 {
+    font-size: 20px; /* Juster skriftstørrelse for overskrift */
+    margin: 0; /* Fjern margin */
+}
+
+#velkommen p {
+    font-size: 14px; /* Juster skriftstørrelse for tekst */
+    margin: 0; /* Fjern margin */
+}
+
 
     /* Om sektion */
     .om-container .om-title {
