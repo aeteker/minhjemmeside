@@ -82,6 +82,11 @@ nav.sticky ul li a:hover::after {
     width: 100%; /* Stræk linjen under teksten ved hover */
 }
 
+/* Ny tilføjelse for at sikre korrekt placering */
+nav.sticky ul li a {
+    position: relative; /* Tilføjet for at gøre ::after relative til linket */
+}
+
 
 
 /* Kontaktoplysninger Sektion */
