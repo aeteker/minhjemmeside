@@ -236,12 +236,13 @@ footer p {
 @media (max-width: 768px) {
     nav.sticky {
         display: flex;
-        flex-direction: column; /* Skift til kolonnevisning */
+        flex-direction: column; /* Vis elementerne i kolonne */
         align-items: center; /* Centrér indholdet */
-        padding: 1rem 0; /* Tilføj lidt padding */
+        padding: 1rem 0; /* Tilføj padding til toppen og bunden */
     }
 
-    .nav-container {
+    /* Navigation container */
+    nav.sticky .nav-container {
         display: flex;
         flex-direction: column; /* Skift til kolonnevisning */
         align-items: center; /* Centrér indholdet */
@@ -250,32 +251,37 @@ footer p {
 
     /* Logo */
     nav.sticky .logo a {
-        font-size: 2rem; /* Juster størrelsen for mobil */
         color: #000000;
         text-decoration: none;
+        font-size: 2rem; /* Størrelse på logoet */
+        font-family: 'Roboto Slab';
+        font-weight: normal;
         text-align: center; /* Centrér teksten */
+        margin-bottom: 0.5rem; /* Mellemrum under logoet */
     }
 
     /* Navigation Links */
     nav.sticky ul {
-        padding: 0;
-        margin: 0;
         list-style: none;
         display: flex;
-        flex-direction: column; /* Skift til kolonnevisning */
-        align-items: center; /* Centrér indholdet */
-        gap: 1rem; /* Mindre afstand mellem links */
+        flex-direction: column; /* Vis links i kolonne */
+        align-items: center; /* Centrér linksene */
+        padding: 0; /* Fjern padding */
+        margin: 0; /* Fjern margin */
     }
 
     nav.sticky ul li {
-        margin-bottom: 0; /* Ingen margin under links */
+        margin-bottom: 0.5rem; /* Mellemrum mellem links */
     }
 
     nav.sticky ul li a {
-        font-size: 14px; /* Juster skriftstørrelse for links */
-        text-align: center; /* Centrér teksten */
+        font-family: 'Roboto Slab';
         color: #000000;
         text-decoration: none;
+        font-weight: normal;
+        padding: 0.5rem 0; /* Vertikal padding */
+        transition: color 0.3s ease, transform 0.3s ease;
+        text-align: center; /* Centrér teksten */
     }
 
 
