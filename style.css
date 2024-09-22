@@ -631,19 +631,67 @@ footer p {
     }
 
 
-    /* Om sektion */
-    .om-container .om-title {
-        font-size: 18px; /* Juster skriftstørrelse for titel */
-    }
-
-    .om-container .om-name {
-        font-size: 24px; /* Juster skriftstørrelse for navn */
-    }
-
-    .om-container .undertekst {
-        font-size: 14px; /* Juster skriftstørrelse for undertekst */
-    }
+/* OM MIG sektion til mobilversion */
+#om {
+    background: #f4f4f4;
+    padding: 2rem 1rem; /* Juster padding for mobilvisning */
+    text-align: center; /* Centrér teksten */
 }
+
+.om-container {
+    display: block; /* Skift til block for at få elementer til at stable sig */
+    padding: 1rem 0;
+}
+
+.om-image {
+    width: 100%; /* Gør billedet responsivt */
+    overflow: hidden;
+}
+
+.om-image img {
+    width: 100%; /* Billedet fylder hele bredden */
+    height: auto; /* Behold højden proportional */
+    filter: grayscale(80%); /* Behold effekten */
+}
+
+.om-text {
+    text-align: center; /* Centrér teksten under billedet */
+    margin-top: 1rem; /* Tilføj margin for afstand til billedet */
+}
+
+/* Specifik font til overskriften */
+.om-text .om-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem; /* Juster skriftstørrelse for mobil */
+    font-weight: 500; /* Juster skriftvægt */
+    color: #959191;
+}
+
+/* Specifik font til navnet */
+.om-text .om-name {
+    font-size: 28px; /* Juster skriftstørrelse for mobil */
+    font-family: 'Roboto Slab', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Specifik font til underteksten */
+.om-text .undertekst {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem; /* Juster skriftstørrelse for mobil */
+    line-height: 1.4;
+    color: #959191;
+    margin-top: 1rem; /* Juster margin for afstand */
+}
+
+/* LinkedIn og CV ikoner */
+.linkedin-container, .cv-container {
+    text-align: center; /* Centrér ikoner og links */
+    margin-top: 1rem; /* Juster margin for afstand */
+}
+
 
 
 
@@ -698,4 +746,4 @@ footer p {
     font-size: 14px; /* Juster skriftstørrelse for knap */
 }
 }
-}
+
