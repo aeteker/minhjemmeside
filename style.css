@@ -711,3 +711,29 @@ footer p {
 
 }
 
+@media (max-width: 1024px) {
+    #hero h1 {
+        font-size: 1.5rem; /* Juster efter behov */
+    }
+
+    #hero h2 {
+        font-size: 1.2rem; /* Juster efter behov */
+    }
+
+    #om {
+        display: flex;
+        flex-direction: column; /* Billede over tekst */
+        align-items: center;
+    }
+
+    #om-image img {
+        margin-bottom: 1rem; /* Mellemrum mellem billede og tekst */
+        max-height: 300px; /* Juster højde for mindre skærme */
+    }
+
+    #ydelser {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 kolonner på mindre skærme */
+    }
+}
+
