@@ -588,20 +588,20 @@ footer p {
     padding: 0;
 }
 
-#hero h1 {
-    font-size: 0.6rem !important; /* Mindre skriftstørrelse */
-    color: #000 !important;
+#hero .hero-content h1 {
+    font-size: 0.8rem !important; /* Størrelse på h1 */
+    color: #000 !important; /* Sort farve */
     margin: 0 !important; /* Fjern margin */
-    margin-bottom: 0.5rem !important;
-    letter-spacing: 0.1rem; /* Mindre mellemrum mellem bogstaverne */
+    letter-spacing: 0.1rem; /* Justér mellemrum mellem bogstaver */
 }
 
-#hero h2 {
-    font-size: 0.8rem !important; /* Mindre skriftstørrelse */
-    color: #000 !important;
-    margin: 0 !important;
-    letter-spacing: 0.1rem; /* Mindre mellemrum mellem bogstaverne */
+#hero .hero-content h2 {
+    font-size: 1rem !important; /* Størrelse på h2 */
+    color: #000 !important; /* Sort farve */
+    margin: 0 !important; /* Fjern margin */
+    letter-spacing: 0.1rem; /* Justér mellemrum mellem bogstaver */
 }
+
 
 
 
