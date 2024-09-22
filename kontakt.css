@@ -69,9 +69,10 @@ nav.sticky ul li a:hover::after {
 
 /* Hamburger-menu */
 .hamburger {
-    display: auto; /* Skjuler hamburger-menuen som standard */
+    display: none; /* Skjuler hamburger-menuen som standard */
     flex-direction: column;
     cursor: pointer;
+    margin-left: auto; /* Sørg for, at hamburger-menuen altid er til højre */
 }
 
 .hamburger div {
@@ -247,14 +248,14 @@ footer p {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     nav.sticky ul {
         display: none; /* Skjuler links som standard */
         flex-direction: column;
         gap: 1rem;
         width: 100%; /* Fuld bredde for menuen */
     }
-    
+
     .hamburger {
         display: flex; /* Viser hamburger-menuen */
     }
@@ -262,27 +263,36 @@ footer p {
     .hamburger.active + nav ul {
         display: flex; /* Viser links når hamburger-menuen er aktiv */
     }
-    
+
     /* Kontaktoplysninger Sektion */
     #kontakt-oplysninger {
         text-align: center;
         margin: 2rem 0;
     }
-    
+
     #kontakt-oplysninger .kontaktoverskrift {
-        font-size: 1.5rem; /* Mindre skriftstørrelse til mobil */
+        font-size: 1.5rem;
+        top: 30%; /* Justeret for mobil */
     }
-    
+
     #kontakt-oplysninger .oplysninger {
-        font-size: 1rem; /* Mindre skriftstørrelse til mobil */
+        font-size: 1rem;
+        top: 60%; /* Justeret for mobil */
+    }
+
+    /* Kontakt Sektion */
+    #kontakt-formular {
+        padding: 1rem; /* Mindre padding til mobil */
+        margin: 2rem auto; /* Mindre margin til mobil */
+        max-width: 100%; /* Fuld bredde til mobil */
     }
 
     #kontakt-formular h1 {
         font-size: 1.5rem; /* Mindre overskrift til mobil */
     }
 
+    /* Knappen */
     #kontakt-formular button {
-        padding: 0.5rem 2rem; /* Mindre knap til mobil */
-        font-size: 0.9rem; /* Mindre skriftstørrelse */
+        padding: 0.5rem 2rem; /* Mindre padding til knappen på mobil */
     }
 }
