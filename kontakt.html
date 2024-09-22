@@ -12,14 +12,24 @@
 </head>
 <body>
 
-    <!-- Navigation -->
+  <!-- Navigation -->
     <nav class="sticky">
         <div class="logo">
-            <a href="index.html">GROENNEGARD.DK</a> <!-- Tilføjer logoet/linket -->
+            <a href="index.html">GROENNEGAARD.DK</a> <!-- Logo til venstre -->
         </div>
+
+        <!-- Normal navigation links -->
         <ul class="nav-links">
             <li><a href="index.html">FORSIDE</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
         </ul>
+
+        <!-- Hamburger-menu (vises kun på mobil) -->
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
     
 
@@ -66,6 +76,13 @@
     <footer>
         <p>&copy; 2024 groennegaard.dk</p>
     </footer>
+
+      <script>
+        // JavaScript for at toggle hamburger-menuen
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
