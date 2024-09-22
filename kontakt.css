@@ -79,7 +79,7 @@ nav.sticky ul li a:hover {
 }
 
 nav.sticky ul li a:hover::after {
-    width: 50%; /* Stræk linjen under teksten ved hover */
+    width: 100%; /* Stræk linjen under teksten ved hover */
 }
 
 
