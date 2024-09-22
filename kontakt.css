@@ -266,50 +266,32 @@ footer p {
     }
     /* Kontaktoplysninger Sektion */
     #kontakt-oplysninger {
-        text-align: center; /* Centrér teksten */
+        margin: 2rem 0; /* Mindre margin på mobilen */
     }
 
-    /* Billede i Kontaktoplysninger sektion */
     #kontakt-oplysninger img {
-        height: auto; /* Juster billedhøjde automatisk */
-        width: 100%; /* Billede fylder hele bredden */
-        object-fit: cover; /* Beholder billedets proportioner */
+        height: auto; /* Automatisk højde for billeder på mobilen */
     }
 
     /* Styling for Kontaktoplysninger overskrift */
     .kontaktoverskrift {
-        font-size: 1.5rem; /* Mindre skriftstørrelse */
-        top: 30%; /* Juster placeringen */
-        left: 50%; /* Centrer horisontalt */
-        transform: translate(-50%, -50%); /* Justér for at centrere */
+        position: relative; /* Fjern absolut positionering */
+        top: auto; /* Tilpas top-position */
+        left: auto; /* Tilpas venstre position */
+        transform: none; /* Fjern transform */
+        font-size: 1.5rem; /* Mindre skriftstørrelse til mobilen */
+        text-align: center; /* Centrér teksten */
     }
 
     /* Styling for kontaktoplysninger */
     .oplysninger {
+        position: relative; /* Fjern absolut positionering */
+        top: auto; /* Tilpas top-position */
+        left: auto; /* Tilpas venstre position */
+        transform: none; /* Fjern transform */
+        align-items: center; /* Centrér indholdet */
         font-size: 1rem; /* Mindre skriftstørrelse */
-        top: 60%; /* Juster placeringen */
-        left: 50%; /* Centrer horisontalt */
-        transform: translate(-50%, -50%); /* Justér for at centrere */
-    }
-
-    /* Kontaktformular */
-    #kontakt-formular {
-        padding: 1rem; /* Juster padding */
-        margin: 1rem auto; /* Mindre margin */
-        max-width: 90%; /* Bredde tilpasset til mobilen */
-    }
-
-    #kontakt-formular h1 {
-        font-size: 1.5rem; /* Mindre skriftstørrelse */
-    }
-
-    .input-container input,
-    .input-container textarea {
-        font-size: 0.9rem; /* Mindre skriftstørrelse */
-    }
-
-    #kontakt-formular button {
-        padding: 0.5rem 2rem; /* Juster padding */
+        gap: 0.5rem; /* Mindre mellemrum mellem elementerne */
     }
 
 }
