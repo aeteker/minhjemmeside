@@ -35,7 +35,6 @@ nav.sticky .logo a {
     font-size: 2rem;
     font-family: 'Roboto Slab';
     font-weight: normal;
-
 }
 
 /* Navigation Links */
@@ -47,13 +46,15 @@ nav.sticky ul {
     justify-content: flex-end; /* Placerer links til højre */
 }
 
+nav.sticky ul li {
+    position: relative; /* Tilføjet for at positionere ::after korrekt */
+}
 
 nav.sticky ul li a {
     font-family: 'Roboto Slab';
     color: #000000;
     text-decoration: none;
     font-weight: normal;
-    position: right;
     padding: 0.5rem 0;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -61,8 +62,8 @@ nav.sticky ul li a {
 /* Hover-effekter på navigation */
 nav.sticky ul li a::after {
     content: '';
-    position: absolute;
-    bottom: 0;
+    position: absolute; /* Behold denne linje */
+    bottom: -2px; /* Justeret til at være lige under teksten */
     left: 0;
     width: 0;
     height: 2px;
@@ -76,7 +77,7 @@ nav.sticky ul li a:hover {
 }
 
 nav.sticky ul li a:hover::after {
-    width: 100%;
+    width: 100%; /* Stræk linjen under teksten */
 }
 
 /* Kontaktoplysninger Sektion */
