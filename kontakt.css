@@ -105,7 +105,7 @@ nav.sticky ul li a:hover::after {
     top: 45%; /* Justeret til ca. midten af billedet */
     left: 10%; /* Justeret til venstre side */
     color: #ffffff;
-    font-family: 'Roboto slab';
+    font-family: 'Roboto Slab';
     font-size: 2rem;
     font-weight: lighter;
     margin: 0;
@@ -166,7 +166,7 @@ nav.sticky ul li a:hover::after {
     margin: 0 0 4rem 0; /* Tilføj margin nedenfor overskriften */
     text-align: center;
     color: #333;
-    font-family: 'Roboto slab';
+    font-family: 'Roboto Slab';
     font-weight: lighter;
 }
 
@@ -266,18 +266,23 @@ footer p {
     /* Kontaktoplysninger Sektion */
     #kontakt-oplysninger {
         text-align: center;
-        margin: 2rem 0; /* Mindre margin til kontaktoplysninger */
+        margin: 2rem 0;
     }
     
-    /* Justering af input-felter */
-    .input-container input,
-    .input-container textarea {
-        font-size: 0.9rem; /* Mindre skrifttype til mobil */
+    #kontakt-oplysninger .kontaktoverskrift {
+        font-size: 1.5rem; /* Mindre skriftstørrelse til mobil */
+    }
+    
+    #kontakt-oplysninger .oplysninger {
+        font-size: 1rem; /* Mindre skriftstørrelse til mobil */
     }
 
-    /* Knappen */
+    #kontakt-formular h1 {
+        font-size: 1.5rem; /* Mindre overskrift til mobil */
+    }
+
     #kontakt-formular button {
-        padding: 0.5rem 2rem; /* Mindre padding til knappen */
-        font-size: 0.9rem; /* Mindre skrifttype til mobil */
+        padding: 0.5rem 2rem; /* Mindre knap til mobil */
+        font-size: 0.9rem; /* Mindre skriftstørrelse */
     }
 }
