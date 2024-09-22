@@ -684,36 +684,30 @@ footer p {
 }
 
 /* Kontakt sektion */
-.kontakt-container {
-    padding: 20px;
-    text-align: center;
-}
+ #parallax-window {
+        background-attachment: scroll; /* Deaktiver parallax-effekten på mobile enheder for bedre performance */
+        background-position: center; /* Sørg for, at billedet centrerer sig på mobilen */
+        height: 40vh; /* Mindre højde på mobilen */
+    }
 
-.kontakt-container h2 {
-    font-size: 20px; /* Juster skriftstørrelse for overskrift */
-}
+    /* Kontakt-container til mobil */
+    .kontakt-container {
+        width: 90%; /* Mindre bredde for bedre tilpasning */
+        padding: 2rem; /* Mindre padding */
+    }
 
-.kontakt-container p {
-    font-size: 14px; /* Juster skriftstørrelse for tekst */
-}
+    .kontakt-container h2 {
+        font-size: 1.8rem; /* Mindre skrifttype på mobilen */
+    }
 
-.kontakt-container .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .kontakt-container p {
+        font-size: 1rem; /* Mindre skrifttype på mobilen */
+    }
 
-.kontakt-container .contact-form input,
-.kontakt-container .contact-form textarea {
-    width: 100%;
-    margin-bottom: 10px; /* Mellemrum mellem inputfelter */
-    padding: 10px;
-    font-size: 14px; /* Juster skriftstørrelse for inputfelter */
-}
+    .kontakt-container .kontakt-button {
+        padding: 0.5rem 1rem; /* Mindre padding på knappen */
+    }
 
-.kontakt-container .contact-form button {
-    padding: 10px 20px;
-    font-size: 14px; /* Juster skriftstørrelse for knap */
-}
+
 }
 
