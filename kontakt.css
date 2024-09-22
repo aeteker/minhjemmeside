@@ -265,4 +265,51 @@ footer p {
         gap: 1rem; /* Mindre afstand mellem links */
     }
 
+        /* Kontaktoplysninger Sektion */
+    #kontakt-oplysninger {
+        margin: 2rem 0; /* Mindre margin på mobilen */
+        position: relative;
+        text-align: center;
+    }
+
+    #kontakt-oplysninger img {
+        width: 100%; /* Billedet fylder hele bredden */
+        height: auto; /* Automatisk højde */
+        object-fit: cover; /* Dækker sektionen */
+        object-position: center; /* Centrerer billedet */
+        filter: brightness(40%);
+    }
+
+    /* Styling for Kontaktoplysninger overskrift */
+    .kontaktoverskrift {
+        position: absolute;
+        top: 20%; /* Justeret til toppen af billedet */
+        left: 50%; /* Centrér teksten */
+        transform: translate(-50%, -50%); /* Centrer teksten */
+        color: #ffffff;
+        font-family: 'Roboto Slab';
+        font-size: 1.5rem; /* Mindre skriftstørrelse til mobil */
+        font-weight: lighter;
+        margin: 0;
+        text-align: center; /* Centrér teksten */
+        letter-spacing: 0.1rem;
+        z-index: 10; /* Sørg for, at teksten er oven på billedet */
+    }
+
+    /* Styling for kontaktoplysninger */
+    .oplysninger {
+        position: absolute;
+        top: 75%; /* Justeret til en passende position */
+        left: 50%; /* Centrér teksten */
+        transform: translate(-50%, -50%); /* Centrer teksten */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem; /* Mindre mellemrum mellem elementerne */
+        justify-content: center; /* Centrér indholdet */
+        align-items: center; /* Centrér indholdet */
+        color: #ffffff;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1rem; /* Mindre skriftstørrelse til mobil */
+    }
+
 }
