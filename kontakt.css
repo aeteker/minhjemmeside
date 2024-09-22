@@ -265,7 +265,8 @@ footer p {
         gap: 1rem; /* Mindre afstand mellem links */
     }
 
- #kontakt-oplysninger {
+    /* Kontaktoplysninger Sektion */
+    #kontakt-oplysninger {
         margin: 2rem 0; /* Mindre margin på mobilen */
         position: relative;
         text-align: left; /* Juster tekst til venstre */
@@ -283,8 +284,7 @@ footer p {
     .kontaktoverskrift {
         position: absolute;
         top: 20%; /* Justeret til toppen af billedet */
-        left: 10%; /* Justeret til venstre side */
-        transform: translateY(-50%); /* Vertikal centrering */
+        left: 5%; /* Justeret til venstre side */
         color: #ffffff;
         font-family: 'Roboto Slab';
         font-size: 1.5rem; /* Mindre skriftstørrelse til mobil */
@@ -299,7 +299,7 @@ footer p {
     .oplysninger {
         position: absolute;
         top: 75%; /* Justeret til en passende position */
-        left: 10%; /* Justeret til venstre side */
+        left: 5%; /* Justeret til venstre side */
         transform: translateY(-50%); /* Vertikal centrering */
         display: flex;
         flex-direction: column;
