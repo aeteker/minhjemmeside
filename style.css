@@ -664,24 +664,6 @@ footer p {
     }
 
 
-/* Ydelser sektion */
-.ydelser-container {
-    padding: 20px;
-    text-align: center;
-}
-
-.ydelser-container h2 {
-    font-size: 20px; /* Juster skriftstørrelse for overskrift */
-}
-
-.ydelser-container .service {
-    margin-bottom: 20px; /* Mellemrum mellem serviceelementer */
-}
-
-.ydelser-container .service img {
-    max-width: 100%; /* Gør billeder responsivt */
-}
-
 /* Kontakt sektion */
  #parallax-window {
         background-attachment: scroll; /* Deaktiverer parallax-effekt på mobil for bedre performance */
