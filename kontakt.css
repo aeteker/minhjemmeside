@@ -23,7 +23,7 @@ nav.sticky {
 /* Navigation container */
 nav.sticky .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Placerer elementerne til højre */
     align-items: center;
     width: 100%; /* Sørg for, at containeren fylder hele bredden */
 }
@@ -35,6 +35,8 @@ nav.sticky .logo a {
     font-size: 2rem;
     font-family: 'Roboto Slab';
     font-weight: normal;
+    margin-right: auto; /* Sørger for at holde logoet til venstre */
+
 }
 
 /* Navigation Links */
