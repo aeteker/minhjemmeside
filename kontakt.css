@@ -57,20 +57,20 @@ nav.sticky ul li a {
     font-weight: normal;
     padding: 0.5rem 0;
     transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block; /* Tilføjet for at begrænse effekten til linket */
+    display: inline-block; /* Sikrer, at effekten dækker hele linket */
 }
 
 /* Hover-effekter på navigation */
 nav.sticky ul li a::after {
     content: '';
-    position: absolute; /* Behold denne linje */
+    position: absolute;
     bottom: -2px; /* Justeret til at være lige under teksten */
     left: 0;
-    width: 100%; /* Start bredde til 100% for at sikre, at den er under hele linket */
+    width: 100%; /* Dækker hele bredden af linket */
     height: 2px;
     background: #959191;
     transition: width 0.3s ease;
-    width: 0; /* Start med 0 bredde */
+    width: 0; /* Starter med 0 bredde */
 }
 
 nav.sticky ul li a:hover {
@@ -81,6 +81,7 @@ nav.sticky ul li a:hover {
 nav.sticky ul li a:hover::after {
     width: 100%; /* Stræk linjen under teksten ved hover */
 }
+
 
 
 /* Kontaktoplysninger Sektion */
