@@ -234,34 +234,48 @@ footer p {
 
 /* Medieforespørgsel for mobilvisning */
 @media (max-width: 768px) {
+    nav.sticky {
+        display: flex;
+        flex-direction: column; /* Skift til kolonnevisning */
+        align-items: center; /* Centrér indholdet */
+        padding: 1rem 0; /* Tilføj lidt padding */
+    }
+
     .nav-container {
         display: flex;
-        flex-direction: column;
-        align-items: center; /* Centrér elementerne */
-    }
-    
-    .nav-container .logo {
-        font-size: 16px; /* Juster logo-størrelsen for mobil */
+        flex-direction: column; /* Skift til kolonnevisning */
+        align-items: center; /* Centrér indholdet */
+        width: 100%; /* Sørg for, at containeren fylder hele bredden */
     }
 
-    nav ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    nav ul li {
-        margin-bottom: 10px; /* Mellemrum mellem navigationselementer */
-    }
-
-    nav ul li a {
-        font-size: 14px; /* Juster skriftstørrelse for links */
+    /* Logo */
+    nav.sticky .logo a {
+        font-size: 2rem; /* Juster størrelsen for mobil */
+        color: #000000;
+        text-decoration: none;
         text-align: center; /* Centrér teksten */
     }
 
-    /* Juster størrelsen på knapper i navigationen */
-    .nav-container .nav-button {
-        font-size: 14px; /* Juster skriftstørrelsen for knapper */
+    /* Navigation Links */
+    nav.sticky ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column; /* Skift til kolonnevisning */
+        align-items: center; /* Centrér indholdet */
+        gap: 1rem; /* Mindre afstand mellem links */
+    }
+
+    nav.sticky ul li {
+        margin-bottom: 0; /* Ingen margin under links */
+    }
+
+    nav.sticky ul li a {
+        font-size: 14px; /* Juster skriftstørrelse for links */
+        text-align: center; /* Centrér teksten */
+        color: #000000;
+        text-decoration: none;
     }
 
 
