@@ -646,15 +646,15 @@ footer p {
 
 .om-image {
     width: 100%; /* Gør billedet responsivt */
-    overflow: hidden;
 }
 
 .om-image img {
     width: 100%;
-    max-width: 100%; /* Sikre, at billedet ikke bliver større end containeren */
-    height: auto;
-    filter: grayscale(80%);
+    height: auto; /* Behold højden proportional */
+    object-fit: cover; /* Fyld containeren uden at ændre billedforholdet */
+    filter: grayscale(80%); /* Behold effekten */
 }
+
 
 .om-text {
     text-align: center; /* Centrér teksten under billedet */
