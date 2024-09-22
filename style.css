@@ -604,33 +604,6 @@ footer p {
 }
 
 
-    /* Velkommen sektion */
-#velkommen .container {
-        padding: 0 1rem; /* Justér padding efter behov */
-    }
-
-    #velkommen h2 {
-        font-size: 1.5rem; /* Juster skriftstørrelse for overskrift */
-        margin-bottom: 1rem; /* Juster margin */
-    }
-
-    #velkommen p {
-        font-size: 14px; /* Juster skriftstørrelse for tekst */
-    }
-
-    #velkommen .columns {
-        flex-direction: column; /* Skift til kolonne layout */
-        gap: 1rem; /* Juster mellemrum mellem sektioner */
-        margin-top: 1rem;
-    }
-
-    #velkommen .columns .left-column,
-    #velkommen .columns .right-column {
-        max-width: 100%; /* Gør kolonnerne fuld bredde */
-        text-align: center; /* Centrér teksten */
-    }
-
-
 /* OM MIG sektion til mobilversion */
 #om {
     display: flex;
@@ -640,24 +613,23 @@ footer p {
 }
 
 .om-container {
-    display: block; /* Skift til block for at få elementer til at stable sig */
-    padding: 1rem 0;
+    display: flex; /* Skift til flex for at kunne centrere indhold */
+    flex-direction: column; /* Stak elementer vertikalt */
+    align-items: center; /* Centrér indholdet */
     width: 100%; /* Sørg for, at containeren fylder hele bredden */
 }
 
 .om-image {
     width: 100%; /* Gør billedet responsivt */
-    overflow: hidden; /* Skjul overskydende dele */
+    display: flex; /* Tilføj flex for centering */
+    justify-content: center; /* Centrér indholdet */
 }
 
 .om-image img {
     width: 100%; /* Billedet fylder hele bredden */
     height: auto; /* Behold højden proportional */
-    max-height: 60vh; /* Juster max højden for at undgå for meget plads */
+    max-height: 70vh; /* Juster max højden for at undgå for meget plads */
     object-fit: cover; /* Fyld containeren uden at ændre billedforholdet */
-    display: block; /* Sørg for at billedet opfører sig som block element */
-    margin: 0 auto; /* Centrér billedet */
-    filter: grayscale(80%); /* Behold effekten */
 }
 
 .om-text {
@@ -697,7 +669,6 @@ footer p {
     text-align: center; /* Centrér ikoner og links */
     margin-top: 1rem; /* Juster margin for afstand */
 }
-
 
 
 /* Ydelser sektion */
