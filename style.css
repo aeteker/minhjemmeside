@@ -633,10 +633,11 @@ footer p {
 
 /* OM MIG sektion til mobilversion */
 #om {
-    background: #f4f4f4;
-    padding: 2rem 1rem; /* Juster padding for mobilvisning */
-    text-align: center; /* Centrér teksten */
+    display: flex;
+    flex-direction: column; /* Stak elementer vertikalt */
+    align-items: center; /* Centrér indholdet */
 }
+
 
 .om-container {
     display: block; /* Skift til block for at få elementer til at stable sig */
@@ -649,9 +650,10 @@ footer p {
 }
 
 .om-image img {
-    width: 100%; /* Billedet fylder hele bredden */
-    height: auto; /* Behold højden proportional */
-    filter: grayscale(80%); /* Behold effekten */
+    width: 100%;
+    max-width: 100%; /* Sikre, at billedet ikke bliver større end containeren */
+    height: auto;
+    filter: grayscale(80%);
 }
 
 .om-text {
