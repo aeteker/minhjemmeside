@@ -400,7 +400,7 @@ h1 {
 .cv-link i {
     font-size: 4rem; /* Størrelsen på PDF-ikonet */
     color: #e44c59; /* Farve til PDF-ikonet (rød) */
-    margin-left: 9rem; /* Margin til højre for afstand fra teksten */
+    margin-left: 11rem; /* Margin til højre for afstand fra teksten */
 }
 
 .cv-link:hover {
