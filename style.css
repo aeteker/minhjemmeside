@@ -385,7 +385,7 @@ h1 {
 
 /* Styling for CV-linket */
 .cv-container {
-    margin-top: 2rem; /* Tilføj margin-top for afstand fra LinkedIn-ikonet */
+    margin-top: 1rem; /* Tilføj margin-top for afstand fra LinkedIn-ikonet */
 }
 
 .cv-link {
