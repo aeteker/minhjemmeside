@@ -363,7 +363,7 @@ h1 {
     font-family: 'Roboto Slab', serif; /* Juster fontfamilie */
     font-size: 1.1rem; /* Juster skriftstørrelse */
     color: #959191; /* Farve til teksten, samme som "Mit CV" */
-    margin-right: 1rem; /* Tilføj margin til højre for afstand til ikonet */
+    margin-right: 2rem; /* Tilføj margin til højre for afstand til ikonet */
 }
 
 /* Hover styling */
@@ -385,7 +385,7 @@ h1 {
 
 /* Styling for CV-linket */
 .cv-container {
-    margin-top: 1rem; /* Tilføj margin-top for afstand fra LinkedIn-ikonet */
+    margin-top: 2rem; /* Tilføj margin-top for afstand fra LinkedIn-ikonet */
 }
 
 .cv-link {
