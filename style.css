@@ -25,11 +25,16 @@ header {
     background: #fff; /* Sørg for at baggrunden er hvid så den ikke ser transparent ud */
 }
 
-/* Afgrænset layout til PC */
-.container {
-    max-width: 1200px; /* Maksimal bredde (ændr værdien efter behov) */
-    margin: 0 auto; /* Centrerer containeren på siden */
-    padding: 0 1rem; /* Tilføjer padding på siderne for at undgå, at indholdet rører kanten */
+/* Begrænset layout-størrelse for PC-skærme */
+body {
+    max-width: 1200px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Centrerer layoutet på siden */
+    padding: 0 20px; /* Giver lidt padding på siderne */
+}
+
+/* Eventuelle generelle stilregler */
+header, section, footer {
+    width: 100%; /* Sørger for at indholdet fylder hele bredden af containeren */
 }
 
 .nav-container {
