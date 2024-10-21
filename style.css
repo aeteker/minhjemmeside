@@ -27,14 +27,16 @@ header {
 
 /* Begrænset layout-størrelse for PC-skærme */
 body {
-    max-width: 1200px; /* Juster bredden efter behov */
+    max-width: 1707px; /* Juster til din skærmbredde */
     margin: 0 auto; /* Centrerer layoutet på siden */
-    padding: 0 20px; /* Giver lidt padding på siderne */
+    padding: 0 20px; /* Lidt padding for at give luft på siderne */
+    box-sizing: border-box; /* Sikrer, at padding ikke påvirker den samlede bredde */
 }
 
 /* Eventuelle generelle stilregler */
 header, section, footer {
     width: 100%; /* Sørger for at indholdet fylder hele bredden af containeren */
+    max-width: inherit; /* Beholder max-width fra body */
 }
 
 .nav-container {
